@@ -7,11 +7,11 @@
 <p align="left">
 AI/ML Engineer passionate about building intelligent systems, solving real-world problems, and turning data into impactful products.
 </p>
-
 <p align="left">
 I enjoy machine learning, deep learning, data engineering, MLOps, experimentation, and end-to-end AI solutions.
 </p>
-
+💼 Open to ML Engineer / AI Engineer roles — [roy.misty.1204@gmail.com](mailto:roy.misty.1204@gmail.com)
+</p>
 <br clear="right"/>
 
 ---
@@ -32,22 +32,11 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 ## 🧰 Tech Stack
 
-### 🤖 AI / ML Stacks
-
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,pytorch" />
   <img src="https://cdn.simpleicons.org/scikitlearn" height="48" />
-  <img src="https://cdn.simpleicons.org/pandas" height="48" />
-  <img src="https://cdn.simpleicons.org/numpy" height="48" />
   <img src="https://cdn.simpleicons.org/huggingface" height="48" />
   <img src="https://cdn.simpleicons.org/mlflow" height="48" />
-</div>
-
----
-
-### 🔄 Data Engineering
-
-<div align="center">
   <img src="https://skillicons.dev/icons?i=kafka,postgres,mongodb" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" height="48" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg" height="48" />
@@ -56,10 +45,8 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 ---
 
-### ⚙️ CI/CD • Infra • Ops
-
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,git,github,linux,bash,vscode,fastapi,flask,postman" />
+  <img src="https://skillicons.dev/icons?i=docker,git,github,vscode,fastapi,kubernetes,gcp" />
 </div>
 
 
