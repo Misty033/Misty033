@@ -14,7 +14,6 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 </p>
 <br clear="right"/>
 
----
 
 ## 🌫️ Ask Mist Bot
 > Misty's personal AI assistant · Powered by Gemini · Replies automatically
