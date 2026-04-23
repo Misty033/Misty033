@@ -1,119 +1,125 @@
-<!-- ======================= HERO SECTION ======================= -->
+<!-- ============================ -->
+<!--        PREMIUM README       -->
+<!-- ============================ -->
 
 <img align="right" height="180" src="https://raw.githubusercontent.com/Misty033/Misty033/main/output/git_profile.gif" />
 
-<h3 align="left">Hi 👋 I'm Misty Roy</h3>
+# Hey there 👋 I'm Misty Roy
 
-<p align="left">
-AI/ML Engineer passionate about building intelligent systems, solving real-world problems, and turning data into impactful products.
-</p>
+### AI / ML Engineer • Data Enthusiast • Problem Solver
 
-<p align="left">
-I enjoy machine learning, deep learning, data engineering, MLOps, experimentation, and elegant end-to-end AI solutions.
-</p>
+Building intelligent systems, scalable ML pipelines, and practical AI products that solve real-world problems.
+
+- 🤖 Passionate about Artificial Intelligence & Deep Learning  
+- 📊 Turning data into actionable solutions  
+- ⚙️ Building end-to-end ML systems  
+- 🌱 Currently exploring LLMs, RAG, MLOps & Generative AI  
+- ☕ Coffee-powered innovation  
 
 <br clear="right"/>
 
 ---
 
-<!-- ======================= ABOUT ======================= -->
+# 🌷 About Me
 
-## 🌷 About Me
-
-- 🤖 AI/ML Engineer with a strong interest in practical AI systems  
-- 📊 Love converting raw data into decisions and products  
-- 🧠 Interested in LLMs, NLP, Deep Learning & Recommendation Systems  
-- ⚙️ Focused on scalable pipelines, automation & clean workflows  
-- 🌱 Currently learning **Generative AI**, **RAG**, **MLOps**, **Vector Databases**
-- 💡 I enjoy building things that are useful + aesthetic  
-- ☕ Powered by coffee & curiosity
+    class MistyRoy:
+        role = "AI/ML Engineer"
+        skills = [
+            "Machine Learning","Deep Learning","NLP",
+            "Computer Vision","MLOps","Data Engineering"
+        ]
+        current_focus = [
+            "LLMs","Generative AI","RAG Systems","Scalable AI Products"
+        ]
+        fun_fact = "I debug faster after coffee ☕"
 
 ---
 
-<!-- ======================= INTERESTS ======================= -->
-
-## 💫 Interests
+# 💫 Interests
 
 - Machine Learning  
 - Deep Learning  
-- NLP  
+- Natural Language Processing  
 - Generative AI  
-- Prompt Engineering  
+- Recommendation Systems  
 - MLOps  
 - Data Engineering  
-- Recommendation Systems  
-- Computer Vision  
 - Distributed Systems  
-- AI Products  
-- Open Source
+- AI Startups  
+- Open Source  
 
 ---
 
-<!-- ======================= TECH STACK ======================= -->
+# 🧰 Tech Stack
 
-## 🧰 Tech Stack & Tools
+### 👩‍💻 Languages
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=python,cpp,java,sql,bash" />
+</p>
 
 ### 🤖 AI / ML
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv" height="42" />
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv" />
 </p>
 
-### 📊 Data / Databases
+### ⚙️ Backend / APIs
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb" height="42" />
+<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs" />
 </p>
 
-### ⚙️ Data Engineering / MLOps
+### 📊 Databases
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,bash,git,github" height="42" />
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb" />
 </p>
 
-### 🚀 Platforms / Tools
+### 🚀 DevOps / Cloud
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,gcp,git,github" />
+</p>
+
+### 🔄 Data Engineering
 
 - Apache Kafka  
 - Apache Airflow  
 - Databricks  
-- MLflow  
 - Apache Spark  
-- FastAPI  
-- Jupyter Notebook  
-- VS Code  
-- Google Cloud
+- MLflow  
+- Hadoop  
 
 ---
 
-<!-- ======================= GITHUB STATS ======================= -->
-
-## 📈 GitHub Analytics
+# 📈 GitHub Analytics
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Misty033&locale=en&mode=daily&theme=dracula&hide_border=true&border_radius=8" height="160" />
-  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Misty033&locale=en&layout=compact&card_width=320&langs_count=8&theme=tokyonight&hide_border=true" height="160" />
+
+<img src="https://github-readme-stats.vercel.app/api?username=Misty033&show_icons=true&theme=tokyonight&hide_border=true" height="170"/>
+
+<img src="https://streak-stats.demolab.com?user=Misty033&theme=tokyonight&hide_border=true" height="170"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Misty033&layout=compact&theme=tokyonight&hide_border=true" height="170"/>
+
 </div>
 
 ---
 
-<!-- ======================= FEATURED REPOS ======================= -->
+# ⭐ Featured Projects
 
-## ⭐ Favourite Repositories
-
-> Replace these with your actual best project links
-
-- 🔹 [Customer Churn Prediction](https://github.com/Misty033)
-- 🔹 [Movie Recommendation Engine](https://github.com/Misty033)
-- 🔹 [AI Resume Screener](https://github.com/Misty033)
-- 🔹 [Stock Forecasting using LSTM](https://github.com/Misty033)
-- 🔹 [End-to-End MLOps Pipeline](https://github.com/Misty033)
+| Project | Description |
+|--------|-------------|
+| [Customer Churn Prediction](https://github.com/Misty033) | Predicting customer churn using ML |
+| [Movie Recommendation System](https://github.com/Misty033) | Personalized recommendations |
+| [AI Resume Screener](https://github.com/Misty033) | Resume ranking with NLP |
+| [Stock Forecasting LSTM](https://github.com/Misty033) | Time series prediction |
+| [MLOps Pipeline](https://github.com/Misty033) | Automated training & deployment |
 
 ---
 
-<!-- ======================= SOCIAL LINKS ======================= -->
-
-## 🌐 Social Links
+# 🌐 Connect With Me
 
 <p align="left">
 
@@ -137,36 +143,32 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 ---
 
-<!-- ======================= CONNECT ======================= -->
+# 🤝 Open To
 
-## 🤝 Connect With Me
-
-- Open to AI/ML collaborations  
-- Open Source Projects  
-- Freelance ML Solutions  
+- AI/ML Collaborations  
+- Freelance Projects  
+- Research Opportunities  
 - Startup Ideas  
-- Research Discussions  
-- Product Building Opportunities  
+- Open Source Contributions  
 
 ---
 
-<!-- ======================= FUN FACT ======================= -->
+# ✨ Fun Fact
 
-## ✨ Fun Fact
+    while True:
+        learn()
+        build()
+        improve()
+        repeat()
 
-```python
-while alive:
-    learn()
-    build()
-    improve()
-    drink_coffee()
-```
+---
 
-<!-- ======================= SNAKE ======================= -->
-
-## 🐍 Contribution Graph
+# 🐍 Contribution Graph
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Misty033/Misty033/output/snake.svg" alt="Snake animation" width="100%" />
+  <img src="https://raw.githubusercontent.com/Misty033/Misty033/output/snake.svg" width="100%" />
 </p>
 
+---
+
+# 💙 Thanks for visiting my profile
