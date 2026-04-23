@@ -28,7 +28,7 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 - 💡 I enjoy building things that are useful!  
 - ☕ Powered by coffee & curiosity
 
----
+
 
 ## 🧰 Tech Stack
 
@@ -61,7 +61,7 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 <div align="center">
   <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,git,github,linux,bash,vscode,fastapi,flask,postman" />
 </div>
----
+
 
 ## 📈 GitHub Dashboard
 
@@ -75,15 +75,15 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 </div>
 
----
+
 
 ## ⭐ Featured Projects
 
--🔹 [AI Newsletter Agent](https://github.com/Misty033/ai_newsletter_agent)
--🔹 [AI Chatbot for government scheme retrival using RAG](https://github.com/Misty033/Government-Scheme-retrival-system-using-LLMs)
--🔹 [Credit card churn prediction using classical ML with XAI](https://github.com/Misty033/Credit_Card_Churn_Detection)
--🔹 [Slack bot: NL to SQL](https://github.com/Misty033/slack-sql-bot)
--🔹 [AI code review and test case generation using local LLM](https://github.com/Misty033/ai-code-review-test-generation-pipeline-v1)
+- 🔹 [AI Newsletter Agent](https://github.com/Misty033/ai_newsletter_agent)
+- 🔹 [AI Chatbot for government scheme retrival using RAG](https://github.com/Misty033/Government-Scheme-retrival-system-using-LLMs)
+- 🔹 [Credit card churn prediction using classical ML with XAI](https://github.com/Misty033/Credit_Card_Churn_Detection)
+- 🔹 [Slack bot: NL to SQL](https://github.com/Misty033/slack-sql-bot)
+- 🔹 [AI code review and test case generation using local LLM](https://github.com/Misty033/ai-code-review-test-generation-pipeline-v1)
 
 ---
 
