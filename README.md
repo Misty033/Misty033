@@ -1,44 +1,58 @@
-<div align="center">
+<!-- ======================= HERO SECTION ======================= -->
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=00C2FF&center=true&vCenter=true&width=950&lines=Hi+I+am+Misty+Roy;AI%2FML+Engineer;Building+Production+Ready+AI+Systems;LLMs+%7C+Deep+Learning+%7C+MLOps;Welcome+to+my+Portfolio" />
+<img align="right" height="180" src="https://raw.githubusercontent.com/Misty033/Misty033/main/output/git_profile.gif" />
 
-# 🚀 Misty Roy
+<h3 align="left">Hi 👋 I'm Misty Roy</h3>
 
-### AI / ML Engineer • Builder • Problem Solver
+<p align="left">
+AI/ML Engineer passionate about building intelligent systems, solving real-world problems, and turning data into impactful products.
+</p>
 
-</div>
-
-<img align="right" height="210" src="https://raw.githubusercontent.com/Misty033/Misty033/main/output/git_profile.gif" />
-
-## 🧠 About Me
-
-- Designing intelligent systems that create real impact  
-- Strong focus on ML pipelines, APIs, automation, deployment  
-- Exploring LLM Apps, RAG, Agents, Vector DBs  
-- Love elegant engineering + measurable outcomes  
-- Always learning, always building
+<p align="left">
+I enjoy machine learning, deep learning, data engineering, MLOps, experimentation, and elegant end-to-end AI solutions.
+</p>
 
 <br clear="right"/>
 
 ---
 
-## ⚡ Core Stack
+<!-- ======================= ABOUT ======================= -->
 
-<p align="center">
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,docker,kubernetes,linux,git,github,vscode,postgres,mongodb,gcp" />
-</p>
+## 🌷 About Me
 
-### Data / MLOps
+- 🤖 AI/ML Engineer with a strong interest in practical AI systems  
+- 📊 Love converting raw data into decisions and products  
+- 🧠 Interested in LLMs, NLP, Deep Learning & Recommendation Systems  
+- ⚙️ Focused on scalable pipelines, automation & clean workflows  
+- 🌱 Currently learning **Generative AI**, **RAG**, **MLOps**, **Vector Databases**
+- 💡 I enjoy building things that are useful + aesthetic  
+- ☕ Powered by coffee & curiosity
+
+---
+
+## 🧰 Premium Tech Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,fastapi,flask,docker,kubernetes,linux,git,github,vscode,postgres,mongodb,gcp" />
+
+</div>
+
+### 🔄 Data Engineering
 `Kafka` • `Airflow` • `Spark` • `Databricks` • `MLflow` • `ETL`
 
 ---
 
-## 📊 Live GitHub Command Center
+## 📈 GitHub Dashboard
 
 <div align="center">
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Misty033&show_icons=true&theme=tokyonight&hide_border=true" />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Misty033&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" />
+
 <img height="170" src="https://streak-stats.demolab.com?user=Misty033&theme=tokyonight&hide_border=true" />
+
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Misty033&layout=compact&theme=tokyonight&hide_border=true" />
+
 </div>
 
 ---
@@ -46,38 +60,47 @@
 ## 🏆 Achievements
 
 <div align="center">
+
 <img src="https://github-profile-trophy.vercel.app/?username=Misty033&theme=tokyonight&no-frame=true&row=1&column=6" />
+
 </div>
 
 ---
 
-## 🗂️ Featured Projects
+## ⭐ Featured Projects
 
-| Project | Impact |
-|---|---|
-| AI Resume Screener | NLP based ranking |
-| Churn Prediction | Business retention insights |
-| Recommender Engine | Personalized UX |
-| Forecasting Engine | LSTM demand prediction |
-| MLOps Pipeline | CI/CD for models |
-
----
-
-## 📈 Journey Timeline
-
-```text
-Learn → Build → Deploy → Scale → Repeat
-```
+| Project | Stack | What it Does |
+|---|---|---|
+| Customer Churn Prediction | Python, Sklearn | Predicts churn risk |
+| Resume Screener AI | NLP, FastAPI | Smart candidate ranking |
+| Movie Recommender | Python | Personalized recommendations |
+| LSTM Forecasting | TensorFlow | Time-series prediction |
+| MLOps Pipeline | Docker, MLflow | Automated deployment |
 
 ---
 
-## 🌐 Connect
+## 🌐 Connect With Me
 
-<p align="center">
-<a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<div align="center">
+
+<a href="https://linkedin.com/in/YOUR-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:yourmail@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://github.com/Misty033"><img src="https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github&logoColor=white"/></a>
-</p>
+<a href="https://www.kaggle.com/YOURUSERNAME"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white"/></a>
+<a href="https://twitter.com/YOURHANDLE"><img src="https://img.shields.io/badge/X-111111?style=for-the-badge&logo=x&logoColor=white"/></a>
+
+</div>
+
+---
+
+## ✨ Fun Fact
+
+```python
+while alive:
+    learn()
+    build()
+    improve()
+    repeat()
+```
 
 ---
 
@@ -91,8 +114,8 @@ Learn → Build → Deploy → Scale → Repeat
 
 <div align="center">
 
-![](https://komarev.com/ghpvc/?username=Misty033&style=for-the-badge)
+### 💙 Thanks for visiting my profile
 
-### 💙 Thanks for visiting
+![](https://komarev.com/ghpvc/?username=Misty033&style=for-the-badge)
 
 </div>
