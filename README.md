@@ -9,7 +9,7 @@ AI/ML Engineer passionate about building intelligent systems, solving real-world
 </p>
 
 <p align="left">
-I enjoy machine learning, deep learning, data engineering, MLOps, experimentation, and elegant end-to-end AI solutions.
+I enjoy machine learning, deep learning, data engineering, MLOps, experimentation, and end-to-end AI solutions.
 </p>
 
 <br clear="right"/>
@@ -24,23 +24,43 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 - 📊 Love converting raw data into decisions and products  
 - 🧠 Interested in LLMs, NLP, Deep Learning & Recommendation Systems  
 - ⚙️ Focused on scalable pipelines, automation & clean workflows  
-- 🌱 Currently learning **Generative AI**, **RAG**, **MLOps**, **Vector Databases**
-- 💡 I enjoy building things that are useful + aesthetic  
+- 🌱 Currently learning **Cloud Platforms**, **Agentic Systems**, **Deploymnents**
+- 💡 I enjoy building things that are useful!  
 - ☕ Powered by coffee & curiosity
 
 ---
 
-## 🧰 Premium Tech Stack
+## 🧰 Tech Stack
+
+### 🤖 AI / ML Stacks
 
 <div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,fastapi,flask,docker,kubernetes,linux,git,github,vscode,postgres,mongodb,gcp" />
-
+  <img src="https://skillicons.dev/icons?i=python,pytorch" />
+  <img src="https://cdn.simpleicons.org/scikitlearn" height="48" />
+  <img src="https://cdn.simpleicons.org/pandas" height="48" />
+  <img src="https://cdn.simpleicons.org/numpy" height="48" />
+  <img src="https://cdn.simpleicons.org/huggingface" height="48" />
+  <img src="https://cdn.simpleicons.org/mlflow" height="48" />
 </div>
 
-### 🔄 Data Engineering
-`Kafka` • `Airflow` • `Spark` • `Databricks` • `MLflow` • `ETL`
+---
 
+### 🔄 Data Engineering
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=kafka,postgres,mongodb" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" height="48" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg" height="48" />
+  <img src="https://cdn.simpleicons.org/databricks" height="48" />
+</div>
+
+---
+
+### ⚙️ CI/CD • Infra • Ops
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,git,github,linux,bash,vscode,fastapi,flask,postman" />
+</div>
 ---
 
 ## 📈 GitHub Dashboard
@@ -57,25 +77,13 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 ---
 
-## 🏆 Achievements
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=Misty033&theme=tokyonight&no-frame=true&row=1&column=6" />
-
-</div>
-
----
-
 ## ⭐ Featured Projects
 
-| Project | Stack | What it Does |
-|---|---|---|
-| Customer Churn Prediction | Python, Sklearn | Predicts churn risk |
-| Resume Screener AI | NLP, FastAPI | Smart candidate ranking |
-| Movie Recommender | Python | Personalized recommendations |
-| LSTM Forecasting | TensorFlow | Time-series prediction |
-| MLOps Pipeline | Docker, MLflow | Automated deployment |
+🔹 [AI Newsletter Agent](https://github.com/Misty033/ai_newsletter_agent)
+🔹 [AI Chatbot for government scheme retrival using RAG](https://github.com/Misty033/Government-Scheme-retrival-system-using-LLMs)
+🔹 [Credit card churn prediction using classical ML with XAI](https://github.com/Misty033/Credit_Card_Churn_Detection)
+🔹 [Slack bot: NL to SQL](https://github.com/Misty033/slack-sql-bot)
+🔹 [AI code review and test case generation using local LLM](https://github.com/Misty033/ai-code-review-test-generation-pipeline-v1)
 
 ---
 
@@ -83,10 +91,10 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 <div align="center">
 
-<a href="https://linkedin.com/in/YOUR-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="mailto:yourmail@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://www.kaggle.com/YOURUSERNAME"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white"/></a>
-<a href="https://twitter.com/YOURHANDLE"><img src="https://img.shields.io/badge/X-111111?style=for-the-badge&logo=x&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/misty-roy-74ab48199/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:roy.misty.1204@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://www.kaggle.com/mistyroy"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white"/></a>
+
 
 </div>
 
