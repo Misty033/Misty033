@@ -21,6 +21,8 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 [![Ask Mist Bot](https://img.shields.io/badge/Ask%20Mist%20Bot-8957e5?style=for-the-badge&logo=googlegemini&logoColor=white)](https://github.com/Misty033/Misty033/issues/new?title=Question+for+Mist+Bot&body=Hi+Mist+Bot,+I+wanted+to+ask...)
 
+---
+
 <!-- ======================= ABOUT ======================= -->
 
 ## 🌷 About Me
