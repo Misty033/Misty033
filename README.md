@@ -9,7 +9,7 @@
 
 ###
 
-<img align="right" height="150" src="<img align="right" height="150" src="https://raw.githubusercontent.com/Misty033/Misty033/main/Hand-drawn%20animated%20illustration%20style%20of%20a%20girl%20sitting%20at%20a%20desk%20with%20her%20back%20showing%2C%20typing%20on%20computer%2C%20then%20looking%20confused%20and%20scratching%20her%20head%2C%20then%20turning%20around%20in%20her%20chair%20with%20a%20light%20smile%20and%20wa.gif" />"  />
+src="<img align="right" height="150" src="https://raw.githubusercontent.com/Misty033/Misty033/main/output/git_profile.gif" />"  />
 
 ###
 
