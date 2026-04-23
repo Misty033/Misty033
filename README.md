@@ -1,25 +1,34 @@
-<!-- ======================= PREMIUM V2 ======================= -->
+<!-- ======================= HERO SECTION ======================= -->
 
-<div align="center">
-    
-<p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=900&lines=Misty+Roy;AI%2FML+Engineer;Building+Intelligent+Systems;Turning+Data+into+Impact" />
+<img align="right" height="180" src="https://raw.githubusercontent.com/Misty033/Misty033/main/output/git_profile.gif" />
+
+<h3 align="left">Hi 👋 I'm Misty Roy</h3>
+
+<p align="left">
+AI/ML Engineer passionate about building intelligent systems, solving real-world problems, and turning data into impactful products.
 </p>
 
-</div>
-
-<img align="right" height="190" src="https://raw.githubusercontent.com/Misty033/Misty033/main/output/git_profile.gif" />
-
-## 💫 About Me
-
-- 🤖 AI/ML Engineer passionate about real-world AI products  
-- 🧠 Focused on LLMs, NLP, Deep Learning, Recommenders  
-- ⚙️ Building scalable pipelines, APIs, and MLOps systems  
-- 📊 Love data storytelling & experimentation  
-- 🌱 Exploring RAG, Vector DBs, Agents, GenAI  
-- ☕ Coffee + Curiosity = Shipping things
+<p align="left">
+I enjoy machine learning, deep learning, data engineering, MLOps, experimentation, and elegant end-to-end AI solutions.
+</p>
 
 <br clear="right"/>
+
+---
+
+<!-- ======================= ABOUT ======================= -->
+
+## 🌷 About Me
+
+- 🤖 AI/ML Engineer with a strong interest in practical AI systems  
+- 📊 Love converting raw data into decisions and products  
+- 🧠 Interested in LLMs, NLP, Deep Learning & Recommendation Systems  
+- ⚙️ Focused on scalable pipelines, automation & clean workflows  
+- 🌱 Currently learning **Generative AI**, **RAG**, **MLOps**, **Vector Databases**
+- 💡 I enjoy building things that are useful + aesthetic  
+- ☕ Powered by coffee & curiosity
+
+---
 
 ---
 
