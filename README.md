@@ -160,7 +160,13 @@ while alive:
     build()
     improve()
     drink_coffee()
+```
 
 <!-- ======================= SNAKE ======================= -->
-🐍 Contribution Graph
-<img src="https://raw.githubusercontent.com/Misty033/Misty033/output/snake.svg" alt="Snake animation" />
+
+## 🐍 Contribution Graph
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Misty033/Misty033/output/snake.svg" alt="Snake animation" width="100%" />
+</p>
+
