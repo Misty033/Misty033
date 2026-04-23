@@ -112,7 +112,7 @@ while alive:
 
 ---
 
-## 🐍 Contribution Snake
+## 🐍 Contribution 
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/Misty033/Misty033/output/snake.svg" width="100%"/>
