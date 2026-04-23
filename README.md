@@ -10,10 +10,11 @@ AI/ML Engineer passionate about building intelligent systems, solving real-world
 <p align="left">
 I enjoy machine learning, deep learning, data engineering, MLOps, experimentation, and end-to-end AI solutions.
 </p>
-💼 Open to ML Engineer / AI Engineer roles — [roy.misty.1204@gmail.com](mailto:roy.misty.1204@gmail.com)
+<p align="left">💼 Open to AI/ML/Data Engineer roles &nbsp;
+<a href="mailto:roy.misty.1204@gmail.com"><img src="https://img.shields.io/badge/Email%20-D14836?style=flat-square&logo=minutemailer&logoColor=white"/></a>
 </p>
-<br clear="right"/>
 
+---
 
 ## 🌫️ Ask Mist Bot
 > Misty's personal AI assistant · Powered by Gemini · Replies automatically
@@ -26,11 +27,12 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 ## 🌷 About Me
 
-- 🤖 AI/ML Engineer with a strong interest in practical AI systems  
+- 🤖 AI/ML Engineer with a strong interest in practical AI systems
+- 🌱 Currently learning **Cloud Platforms**, **Agentic Systems**, **Deploymnents**
+- 🔨 Currently building: Financial Analyzer using GCP & Databricks 
 - 📊 Love converting raw data into decisions and products  
 - 🧠 Interested in LLMs, NLP, Deep Learning & Recommendation Systems  
 - ⚙️ Focused on scalable pipelines, automation & clean workflows  
-- 🌱 Currently learning **Cloud Platforms**, **Agentic Systems**, **Deploymnents**
 - 💡 I enjoy building things that are useful!  
 - ☕ Powered by coffee & curiosity
 
@@ -72,11 +74,12 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 ## ⭐ Featured Projects
 
-- 🔹 [AI Newsletter Agent](https://github.com/Misty033/ai_newsletter_agent)
-- 🔹 [AI Chatbot for government scheme retrival using RAG](https://github.com/Misty033/Government-Scheme-retrival-system-using-LLMs)
-- 🔹 [Credit card churn prediction using classical ML with XAI](https://github.com/Misty033/Credit_Card_Churn_Detection)
-- 🔹 [Slack bot: NL to SQL](https://github.com/Misty033/slack-sql-bot)
-- 🔹 [AI code review and test case generation using local LLM](https://github.com/Misty033/ai-code-review-test-generation-pipeline-v1)
+| Project | What it does | Stack |
+|---|---|---|
+| [AI Newsletter Agent](https://github.com/Misty033/ai_newsletter_agent) | Autonomous news curation + delivery pipeline | Postgres, Airflow, LLM, Docker |
+| [Govt Scheme RAG Bot](https://github.com/Misty033/Government-Scheme-retrival-system-using-LLMs) | Retrieves & explains government schemes via LLM | RAG, ChromaDB, Langchain, Ollama |
+| [NL→SQL Slack Bot](https://github.com/Misty033/slack-sql-bot) | Converts plain English to SQL in Slack | Postgres, Gemini, Slack, Railway |
+| [Churn classification with ML & XAI](https://github.com/Misty033/Credit_Card_Churn_Detection) | Credit card churn classification using classical Ml and SHAP & LIME | ML, GCP, FASTAPI, Docker |
 
 ---
 
