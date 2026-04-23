@@ -1,8 +1,10 @@
 <!-- ======================= PREMIUM V2 ======================= -->
 
 <div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=7F3FBF&center=true&vCenter=true&width=800&lines=Hi+👋+I'm+Misty+Roy;AI+%2F+ML+Engineer;Building+Intelligent+Systems;Turning+Data+into+Impact" />
+    
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=900&lines=Misty+Roy;AI%2FML+Engineer;Building+Intelligent+Systems;Turning+Data+into+Impact" />
+</p>
 
 </div>
 
