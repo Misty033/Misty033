@@ -1,6 +1,6 @@
 <!-- ======================= HERO SECTION ======================= -->
 
-<img align="right" height="180" src="https://raw.githubusercontent.com/Misty033/Misty033/main/output/git_profile.gif" />
+<img align="right" height="180" src="https://raw.githubusercontent.com/Misty033/Misty033/main/output/git_profile1.gif" />
 
 <h3 align="left">Hi 👋 I'm Misty Roy</h3>
 
