@@ -66,7 +66,6 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 <img height="170" src="https://streak-stats.demolab.com?user=Misty033&theme=tokyonight&hide_border=true" />
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Misty033&layout=compact&theme=tokyonight&hide_border=true" />
 
 </div>
 
