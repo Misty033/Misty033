@@ -1,269 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Misty Roy · Project Timeline</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap');
-
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    background: #0d1117;
-    font-family: 'Syne', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 2rem;
-  }
-
-  h1 {
-    font-family: 'Space Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.15em;
-    color: #484f58;
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-
-  h1 span { color: #3fb950; }
-
-  .timeline-wrap {
-    width: 100%;
-    max-width: 900px;
-    position: relative;
-  }
-
-  svg.timeline {
-    width: 100%;
-    overflow: visible;
-  }
-
-  /* card hover effects via CSS */
-  .proj-card {
-    cursor: pointer;
-    transition: filter 0.25s;
-  }
-
-  .proj-card:hover .card-bg {
-    filter: brightness(1.3);
-  }
-
-  .proj-card:hover .card-border {
-    opacity: 1 !important;
-  }
-
-  .proj-card:hover .card-glow {
-    opacity: 0.25 !important;
-  }
-
-  .proj-card:hover .arrow-icon {
-    opacity: 1 !important;
-    transform: translateX(3px);
-  }
-
-  .node-dot:hover {
-    r: 10;
-  }
-
-  footer-note {
-    display: block;
-    font-family: 'Space Mono', monospace;
-    font-size: 10px;
-    color: #484f58;
-    text-align: center;
-    margin-top: 2rem;
-    letter-spacing: 0.08em;
-  }
-</style>
-</head>
-<body>
-
-<h1>// <span>misty.roy</span> · build timeline</h1>
-
-<div class="timeline-wrap">
-<svg class="timeline" viewBox="0 0 860 520" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 920 580" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
   <defs>
-    <!-- glows -->
+    <!-- card glows -->
     <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#3fb950" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#e57373" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#e57373" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="g2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#4db6ac" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#4db6ac" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="g3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#d2a8ff" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#d2a8ff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#64b5f6" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#64b5f6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="g4" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffa657" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#ffa657" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#ffb74d" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffb74d" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="g5" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#f78166" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#f78166" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#ba68c8" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ba68c8" stop-opacity="0"/>
     </radialGradient>
-    <filter id="blur4">
-      <feGaussianBlur stdDeviation="4"/>
-    </filter>
-    <filter id="blur8">
-      <feGaussianBlur stdDeviation="8"/>
-    </filter>
+    <filter id="blur4"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
   </defs>
 
-  <!-- ========== AXIS LINE ========== -->
+  <!-- ── background ── -->
+  <rect width="920" height="580" fill="#fafafa"/>
+
+  <!-- ── axis ── -->
+  <line x1="30" y1="340" x2="885" y2="340" stroke="#d0d7de" stroke-width="1.5"/>
+  <polygon points="885,336 895,340 885,344" fill="#d0d7de"/>
+
   <!-- year labels -->
-  <text x="60" y="488" font-family="Space Mono, monospace" font-size="10" fill="#484f58" text-anchor="middle">2023</text>
-  <text x="260" y="488" font-family="Space Mono, monospace" font-size="10" fill="#484f58" text-anchor="middle">early 2024</text>
-  <text x="480" y="488" font-family="Space Mono, monospace" font-size="10" fill="#484f58" text-anchor="middle">mid 2024</text>
-  <text x="680" y="488" font-family="Space Mono, monospace" font-size="10" fill="#484f58" text-anchor="middle">late 2024</text>
-  <text x="820" y="488" font-family="Space Mono, monospace" font-size="10" fill="#3fb950" text-anchor="middle">2025 →</text>
+  <text x="88"  y="360" font-family="'Segoe UI Mono','Courier New',monospace" font-size="9" fill="#8c9198" text-anchor="middle">2024</text>
+  <text x="258" y="360" font-family="'Segoe UI Mono','Courier New',monospace" font-size="9" fill="#8c9198" text-anchor="middle">2025</text>
+  <text x="430" y="360" font-family="'Segoe UI Mono','Courier New',monospace" font-size="9" fill="#8c9198" text-anchor="middle">2026</text>
+  <text x="600" y="360" font-family="'Segoe UI Mono','Courier New',monospace" font-size="9" fill="#8c9198" text-anchor="middle">2026</text>
+  <text x="770" y="360" font-family="'Segoe UI Mono','Courier New',monospace" font-size="9" fill="#7c57a8" text-anchor="middle">2026 ·latest</text>
 
   <!-- tick marks -->
-  <line x1="60" y1="466" x2="60" y2="474" stroke="#30363d" stroke-width="1"/>
-  <line x1="260" y1="466" x2="260" y2="474" stroke="#30363d" stroke-width="1"/>
-  <line x1="480" y1="466" x2="480" y2="474" stroke="#30363d" stroke-width="1"/>
-  <line x1="680" y1="466" x2="680" y2="474" stroke="#30363d" stroke-width="1"/>
-  <line x1="820" y1="466" x2="820" y2="474" stroke="#3fb950" stroke-width="1" stroke-opacity="0.5"/>
-
-  <!-- main axis -->
-  <line x1="30" y1="468" x2="840" y2="468" stroke="#21262d" stroke-width="1.5"/>
-  <!-- moving glow on axis -->
-  <line x1="30" y1="468" x2="840" y2="468" stroke="url(#g1)" stroke-width="1" stroke-opacity="0.3"/>
-
-  <!-- arrow head -->
-  <polygon points="840,464 850,468 840,472" fill="#30363d"/>
+  <line x1="88"  y1="336" x2="88"  y2="344" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="258" y1="336" x2="258" y2="344" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="430" y1="336" x2="430" y2="344" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="600" y1="336" x2="600" y2="344" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="770" y1="336" x2="770" y2="344" stroke="#ba68c8" stroke-width="1" stroke-opacity="0.6"/>
 
 
-  <!-- ========== PROJECT 1: Churn ML ========== -->
-  <!-- node on axis -->
-  <circle cx="60" cy="468" r="6" fill="#d2a8ff" class="node-dot"/>
-  <circle cx="60" cy="468" r="14" fill="url(#g3)" filter="url(#blur4)" opacity="0.5"/>
-
-  <!-- connector line going UP -->
-  <line x1="60" y1="468" x2="60" y2="320" stroke="#d2a8ff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 4"/>
-  <line x1="60" y1="320" x2="130" y2="320" stroke="#d2a8ff" stroke-width="1" stroke-opacity="0.3"/>
-
-  <!-- card -->
+  <!-- ══════════════════════════════════════
+       PROJECT 1 — Credit Card Churn  (UP)
+       ══════════════════════════════════════ -->
+  <circle cx="88" cy="340" r="6" fill="#e57373"/>
+  <circle cx="88" cy="340" r="14" fill="url(#g1)" filter="url(#blur4)" opacity="0.45"/>
+  <!-- connector -->
+  <line x1="88" y1="340" x2="88" y2="175" stroke="#e57373" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
+  <line x1="88" y1="175" x2="118" y2="175" stroke="#e57373" stroke-width="1" stroke-opacity="0.25"/>
+  <!-- square card 140×140 -->
   <a href="https://github.com/Misty033/Credit_Card_Churn_Detection" target="_blank">
-    <g class="proj-card" transform="translate(130, 285)">
-      <rect class="card-glow" x="-4" y="-4" width="188" height="82" rx="10" fill="#d2a8ff" opacity="0" filter="url(#blur8)"/>
-      <rect class="card-bg" x="0" y="0" width="180" height="74" rx="8" fill="#161b22"/>
-      <rect class="card-border" x="0" y="0" width="180" height="74" rx="8" fill="none" stroke="#d2a8ff" stroke-width="1" opacity="0.4"/>
-      <rect x="0" y="0" width="4" height="74" rx="2" fill="#d2a8ff"/>
-      <text x="16" y="17" font-family="Space Mono, monospace" font-size="8" fill="#d2a8ff" opacity="0.7" letter-spacing="1">CLASSICAL ML · XAI</text>
-      <text x="16" y="34" font-family="Syne, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">Credit Card Churn</text>
-      <text x="16" y="49" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">XGBoost · SHAP · LIME</text>
-      <text x="16" y="63" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">explainability focused</text>
-      <text class="arrow-icon" x="158" y="42" font-family="monospace" font-size="14" fill="#d2a8ff" opacity="0" style="transition:opacity 0.2s,transform 0.2s">→</text>
+    <g class="proj-card">
+      <rect x="114" y="105" width="148" height="148" rx="10" fill="#e57373" opacity="0" filter="url(#blur6)"/>
+      <rect x="118" y="109" width="140" height="140" rx="9" fill="#fff" stroke="#e57373" stroke-width="1" stroke-opacity="0.35"/>
+      <!-- top accent bar -->
+      <rect x="118" y="109" width="140" height="4" rx="9" fill="#e57373" opacity="0.7"/>
+      <rect x="118" y="111" width="140" height="2" fill="#e57373" opacity="0.7"/>
+      <!-- left bar -->
+      <rect x="118" y="109" width="4" height="140" rx="9" fill="#e57373" opacity="0.7"/>
+      <rect x="120" y="109" width="2" height="140" fill="#e57373" opacity="0.7"/>
+      <!-- tag -->
+      <text x="132" y="127" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#e57373" opacity="0.8" letter-spacing="0.5">CLASSICAL ML · XAI</text>
+      <!-- name -->
+      <text x="132" y="145" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Credit Card</text>
+      <text x="132" y="160" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Churn</text>
+      <!-- stack -->
+      <text x="132" y="178" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7.5" fill="#57606a">XGBoost · SHAP · LIME</text>
+      <!-- year badge -->
+      <rect x="132" y="187" width="34" height="12" rx="4" fill="#e57373" opacity="0.1"/>
+      <text x="149" y="196" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#e57373" text-anchor="middle">2024</text>
+      <!-- arrow -->
+      <text x="237" y="237" font-family="monospace" font-size="13" fill="#e57373" opacity="0.5">→</text>
     </g>
   </a>
 
 
-  <!-- ========== PROJECT 2: RAG Bot ========== -->
-  <circle cx="260" cy="468" r="6" fill="#58a6ff" class="node-dot"/>
-  <circle cx="260" cy="468" r="14" fill="url(#g2)" filter="url(#blur4)" opacity="0.5"/>
-
+  <!-- ══════════════════════════════════════
+       PROJECT 2 — Govt Scheme RAG  (DOWN)
+       ══════════════════════════════════════ -->
+  <circle cx="258" cy="340" r="6" fill="#4db6ac"/>
+  <circle cx="258" cy="340" r="14" fill="url(#g2)" filter="url(#blur4)" opacity="0.45"/>
   <!-- connector going DOWN -->
-  <line x1="260" y1="468" x2="260" y2="390" stroke="#58a6ff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 4"/>
-  <line x1="260" y1="390" x2="290" y2="390" stroke="#58a6ff" stroke-width="1" stroke-opacity="0.3"/>
-
+  <line x1="258" y1="340" x2="258" y2="390" stroke="#4db6ac" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
+  <line x1="258" y1="390" x2="288" y2="390" stroke="#4db6ac" stroke-width="1" stroke-opacity="0.25"/>
+  <!-- card below axis -->
   <a href="https://github.com/Misty033/Government-Scheme-retrival-system-using-LLMs" target="_blank">
-    <g class="proj-card" transform="translate(290, 355)">
-      <rect class="card-glow" x="-4" y="-4" width="188" height="82" rx="10" fill="#58a6ff" opacity="0" filter="url(#blur8)"/>
-      <rect class="card-bg" x="0" y="0" width="180" height="74" rx="8" fill="#161b22"/>
-      <rect class="card-border" x="0" y="0" width="180" height="74" rx="8" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.4"/>
-      <rect x="0" y="0" width="4" height="74" rx="2" fill="#58a6ff"/>
-      <text x="16" y="17" font-family="Space Mono, monospace" font-size="8" fill="#58a6ff" opacity="0.7" letter-spacing="1">RAG · LLM</text>
-      <text x="16" y="34" font-family="Syne, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">Govt Scheme RAG Bot</text>
-      <text x="16" y="49" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">ChromaDB · Gemini · RAG</text>
-      <text x="16" y="63" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">vector search retrieval</text>
-      <text class="arrow-icon" x="158" y="42" font-family="monospace" font-size="14" fill="#58a6ff" opacity="0" style="transition:opacity 0.2s">→</text>
+    <g class="proj-card">
+      <rect x="284" y="386" width="148" height="148" rx="10" fill="#4db6ac" opacity="0" filter="url(#blur6)"/>
+      <rect x="288" y="390" width="140" height="140" rx="9" fill="#fff" stroke="#4db6ac" stroke-width="1" stroke-opacity="0.35"/>
+      <rect x="288" y="390" width="140" height="4" rx="9" fill="#4db6ac" opacity="0.7"/>
+      <rect x="288" y="392" width="140" height="2" fill="#4db6ac" opacity="0.7"/>
+      <rect x="288" y="390" width="4" height="140" rx="9" fill="#4db6ac" opacity="0.7"/>
+      <rect x="290" y="390" width="2" height="140" fill="#4db6ac" opacity="0.7"/>
+      <text x="302" y="408" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#4db6ac" opacity="0.8" letter-spacing="0.5">RAG · LLM</text>
+      <text x="302" y="426" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Govt Scheme</text>
+      <text x="302" y="441" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">RAG Bot</text>
+      <text x="302" y="459" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7.5" fill="#57606a">ChromaDB · Gemini</text>
+      <rect x="302" y="468" width="34" height="12" rx="4" fill="#4db6ac" opacity="0.1"/>
+      <text x="319" y="477" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#4db6ac" text-anchor="middle">2025</text>
+      <text x="407" y="518" font-family="monospace" font-size="13" fill="#4db6ac" opacity="0.5">→</text>
     </g>
   </a>
 
 
-  <!-- ========== PROJECT 3: NL→SQL ========== -->
-  <circle cx="480" cy="468" r="6" fill="#ffa657" class="node-dot"/>
-  <circle cx="480" cy="468" r="14" fill="url(#g4)" filter="url(#blur4)" opacity="0.5"/>
-
-  <!-- connector going UP -->
-  <line x1="480" y1="468" x2="480" y2="280" stroke="#ffa657" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 4"/>
-  <line x1="480" y1="280" x2="510" y2="280" stroke="#ffa657" stroke-width="1" stroke-opacity="0.3"/>
-
+  <!-- ══════════════════════════════════════
+       PROJECT 3 — NL→SQL  (UP)
+       ══════════════════════════════════════ -->
+  <circle cx="430" cy="340" r="6" fill="#64b5f6"/>
+  <circle cx="430" cy="340" r="14" fill="url(#g3)" filter="url(#blur4)" opacity="0.45"/>
+  <line x1="430" y1="340" x2="430" y2="190" stroke="#64b5f6" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
+  <line x1="430" y1="190" x2="460" y2="190" stroke="#64b5f6" stroke-width="1" stroke-opacity="0.25"/>
   <a href="https://github.com/Misty033/slack-sql-bot" target="_blank">
-    <g class="proj-card" transform="translate(510, 245)">
-      <rect class="card-glow" x="-4" y="-4" width="188" height="82" rx="10" fill="#ffa657" opacity="0" filter="url(#blur8)"/>
-      <rect class="card-bg" x="0" y="0" width="180" height="74" rx="8" fill="#161b22"/>
-      <rect class="card-border" x="0" y="0" width="180" height="74" rx="8" fill="none" stroke="#ffa657" stroke-width="1" opacity="0.4"/>
-      <rect x="0" y="0" width="4" height="74" rx="2" fill="#ffa657"/>
-      <text x="16" y="17" font-family="Space Mono, monospace" font-size="8" fill="#ffa657" opacity="0.7" letter-spacing="1">NLP · INTEGRATIONS</text>
-      <text x="16" y="34" font-family="Syne, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">NL → SQL Slack Bot</text>
-      <text x="16" y="49" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">OpenAI · SQLAlchemy</text>
-      <text x="16" y="63" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">plain english to queries</text>
-      <text class="arrow-icon" x="158" y="42" font-family="monospace" font-size="14" fill="#ffa657" opacity="0" style="transition:opacity 0.2s">→</text>
+    <g class="proj-card">
+      <rect x="456" y="186" width="148" height="148" rx="10" fill="#64b5f6" opacity="0" filter="url(#blur6)"/>
+      <rect x="460" y="190" width="140" height="140" rx="9" fill="#fff" stroke="#64b5f6" stroke-width="1" stroke-opacity="0.35"/>
+      <rect x="460" y="190" width="140" height="4" rx="9" fill="#64b5f6" opacity="0.7"/>
+      <rect x="460" y="192" width="140" height="2" fill="#64b5f6" opacity="0.7"/>
+      <rect x="460" y="190" width="4" height="140" rx="9" fill="#64b5f6" opacity="0.7"/>
+      <rect x="462" y="190" width="2" height="140" fill="#64b5f6" opacity="0.7"/>
+      <text x="474" y="208" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#64b5f6" opacity="0.8" letter-spacing="0.5">NLP · INTEGRATIONS</text>
+      <text x="474" y="226" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">NL → SQL</text>
+      <text x="474" y="241" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Slack Bot</text>
+      <text x="474" y="259" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7.5" fill="#57606a">OpenAI · SQLAlchemy</text>
+      <rect x="474" y="268" width="34" height="12" rx="4" fill="#64b5f6" opacity="0.1"/>
+      <text x="491" y="277" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#64b5f6" text-anchor="middle">2026</text>
+      <text x="579" y="318" font-family="monospace" font-size="13" fill="#64b5f6" opacity="0.5">→</text>
     </g>
   </a>
 
 
-  <!-- ========== PROJECT 4: Newsletter Agent ========== -->
-  <circle cx="680" cy="468" r="6" fill="#3fb950" class="node-dot"/>
-  <circle cx="680" cy="468" r="14" fill="url(#g1)" filter="url(#blur4)" opacity="0.5"/>
-
-  <!-- connector going DOWN -->
-  <line x1="680" y1="468" x2="680" y2="390" stroke="#3fb950" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 4"/>
-  <line x1="680" y1="390" x2="490" y2="390" stroke="#3fb950" stroke-width="1" stroke-opacity="0.3"/>
-
+  <!-- ══════════════════════════════════════
+       PROJECT 4 — Newsletter Agent  (DOWN)
+       ══════════════════════════════════════ -->
+  <circle cx="600" cy="340" r="6" fill="#ffb74d"/>
+  <circle cx="600" cy="340" r="14" fill="url(#g4)" filter="url(#blur4)" opacity="0.45"/>
+  <line x1="600" y1="340" x2="600" y2="390" stroke="#ffb74d" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
+  <line x1="600" y1="390" x2="460" y2="390" stroke="#ffb74d" stroke-width="1" stroke-opacity="0.25"/>
   <a href="https://github.com/Misty033/ai_newsletter_agent" target="_blank">
-    <g class="proj-card" transform="translate(490, 355)">
-      <rect class="card-glow" x="-4" y="-4" width="188" height="82" rx="10" fill="#3fb950" opacity="0" filter="url(#blur8)"/>
-      <rect class="card-bg" x="0" y="0" width="180" height="74" rx="8" fill="#161b22"/>
-      <rect class="card-border" x="0" y="0" width="180" height="74" rx="8" fill="none" stroke="#3fb950" stroke-width="1" opacity="0.4"/>
-      <rect x="0" y="0" width="4" height="74" rx="2" fill="#3fb950"/>
-      <text x="16" y="17" font-family="Space Mono, monospace" font-size="8" fill="#3fb950" opacity="0.7" letter-spacing="1">AGENTIC AI</text>
-      <text x="16" y="34" font-family="Syne, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">AI Newsletter Agent</text>
-      <text x="16" y="49" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">LangChain · Airflow · FastAPI</text>
-      <text x="16" y="63" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">autonomous pipeline</text>
-      <text class="arrow-icon" x="158" y="42" font-family="monospace" font-size="14" fill="#3fb950" opacity="0" style="transition:opacity 0.2s">→</text>
+    <g class="proj-card">
+      <rect x="456" y="386" width="148" height="148" rx="10" fill="#ffb74d" opacity="0" filter="url(#blur6)"/>
+      <rect x="460" y="390" width="140" height="140" rx="9" fill="#fff" stroke="#ffb74d" stroke-width="1" stroke-opacity="0.35"/>
+      <rect x="460" y="390" width="140" height="4" rx="9" fill="#ffb74d" opacity="0.7"/>
+      <rect x="460" y="392" width="140" height="2" fill="#ffb74d" opacity="0.7"/>
+      <rect x="460" y="390" width="4" height="140" rx="9" fill="#ffb74d" opacity="0.7"/>
+      <rect x="462" y="390" width="2" height="140" fill="#ffb74d" opacity="0.7"/>
+      <text x="474" y="408" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#ffb74d" opacity="0.8" letter-spacing="0.5">AGENTIC AI</text>
+      <text x="474" y="426" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">AI Newsletter</text>
+      <text x="474" y="441" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Agent</text>
+      <text x="474" y="459" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7.5" fill="#57606a">LangChain · Airflow</text>
+      <rect x="474" y="468" width="34" height="12" rx="4" fill="#ffb74d" opacity="0.1"/>
+      <text x="491" y="477" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#ffb74d" text-anchor="middle">2026</text>
+      <text x="579" y="518" font-family="monospace" font-size="13" fill="#ffb74d" opacity="0.5">→</text>
     </g>
   </a>
 
 
-  <!-- ========== PROJECT 5: Code Review ========== -->
-  <circle cx="820" cy="468" r="7" fill="#f78166" class="node-dot"/>
-  <circle cx="820" cy="468" r="16" fill="url(#g5)" filter="url(#blur4)" opacity="0.6"/>
-  <!-- "latest" badge on node -->
-  <rect x="800" y="444" width="40" height="14" rx="4" fill="#f78166" opacity="0.15"/>
-  <text x="820" y="454" font-family="Space Mono, monospace" font-size="7" fill="#f78166" text-anchor="middle">latest</text>
-
-  <!-- connector going UP -->
-  <line x1="820" y1="468" x2="820" y2="140" stroke="#f78166" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 4"/>
-  <line x1="820" y1="140" x2="660" y2="140" stroke="#f78166" stroke-width="1" stroke-opacity="0.3"/>
-
+  <!-- ══════════════════════════════════════
+       PROJECT 5 — AI Code Review  (UP)
+       ══════════════════════════════════════ -->
+  <circle cx="770" cy="340" r="7" fill="#ba68c8"/>
+  <circle cx="770" cy="340" r="16" fill="url(#g5)" filter="url(#blur4)" opacity="0.5"/>
+  <!-- latest badge -->
+  <rect x="750" y="318" width="40" height="13" rx="4" fill="#ba68c8" opacity="0.12"/>
+  <text x="770" y="327" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#ba68c8" text-anchor="middle">latest</text>
+  <!-- connector -->
+  <line x1="770" y1="340" x2="770" y2="155" stroke="#ba68c8" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
+  <line x1="770" y1="155" x2="622" y2="155" stroke="#ba68c8" stroke-width="1" stroke-opacity="0.25"/>
   <a href="https://github.com/Misty033/ai-code-review-test-generation-pipeline-v1" target="_blank">
-    <g class="proj-card" transform="translate(480, 105)">
-      <rect class="card-glow" x="-4" y="-4" width="188" height="82" rx="10" fill="#f78166" opacity="0" filter="url(#blur8)"/>
-      <rect class="card-bg" x="0" y="0" width="180" height="74" rx="8" fill="#161b22"/>
-      <rect class="card-border" x="0" y="0" width="180" height="74" rx="8" fill="none" stroke="#f78166" stroke-width="1.5" opacity="0.6"/>
-      <rect x="0" y="0" width="4" height="74" rx="2" fill="#f78166"/>
-      <text x="16" y="17" font-family="Space Mono, monospace" font-size="8" fill="#f78166" opacity="0.7" letter-spacing="1">LOCAL LLM · DEVTOOLS</text>
-      <text x="16" y="34" font-family="Syne, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">AI Code Review</text>
-      <text x="16" y="49" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">Ollama · LLM · AST parser</text>
-      <text x="16" y="63" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">auto test generation</text>
-      <text class="arrow-icon" x="158" y="42" font-family="monospace" font-size="14" fill="#f78166" opacity="0" style="transition:opacity 0.2s">→</text>
+    <g class="proj-card">
+      <rect x="618" y="151" width="148" height="148" rx="10" fill="#ba68c8" opacity="0" filter="url(#blur6)"/>
+      <rect x="622" y="155" width="140" height="140" rx="9" fill="#fff" stroke="#ba68c8" stroke-width="1.5" stroke-opacity="0.5"/>
+      <rect x="622" y="155" width="140" height="4" rx="9" fill="#ba68c8" opacity="0.75"/>
+      <rect x="622" y="157" width="140" height="2" fill="#ba68c8" opacity="0.75"/>
+      <rect x="622" y="155" width="4" height="140" rx="9" fill="#ba68c8" opacity="0.75"/>
+      <rect x="624" y="155" width="2" height="140" fill="#ba68c8" opacity="0.75"/>
+      <text x="636" y="173" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#ba68c8" opacity="0.8" letter-spacing="0.5">LOCAL LLM · DEVTOOLS</text>
+      <text x="636" y="191" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">AI Code</text>
+      <text x="636" y="206" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Review</text>
+      <text x="636" y="224" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7.5" fill="#57606a">Ollama · LLM · AST</text>
+      <rect x="636" y="233" width="34" height="12" rx="4" fill="#ba68c8" opacity="0.1"/>
+      <text x="653" y="242" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#ba68c8" text-anchor="middle">2026</text>
+      <text x="741" y="283" font-family="monospace" font-size="13" fill="#ba68c8" opacity="0.5">→</text>
     </g>
+  </a>
+
+
+  <!-- ══════════════════════════════════════
+       MORE → link  (far right)
+       ══════════════════════════════════════ -->
+  <a href="https://github.com/Misty033?tab=repositories" target="_blank">
+    <rect x="856" y="290" width="52" height="22" rx="11" fill="#f0f0f5" stroke="#d0d7de" stroke-width="1"/>
+    <text x="882" y="304" font-family="'Segoe UI Mono','Courier New',monospace" font-size="8.5" fill="#57606a" text-anchor="middle" letter-spacing="0.3">more →</text>
   </a>
 
 </svg>
-</div>
-
-<footer-note>hover cards · click to open repo</footer-note>
-
-</body>
-</html>
