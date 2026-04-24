@@ -74,6 +74,8 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 ## ⭐ Favourite Projects
 
+![Timeline](./timeline.svg)
+
 | Project | What it does | Stack |
 |---|---|---|
 | [AI Newsletter Agent](https://github.com/Misty033/ai_newsletter_agent) | Autonomous news curation + delivery pipeline | Postgres, Airflow, LLM, Docker |
