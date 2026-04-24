@@ -72,7 +72,7 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 
 
-## ⭐ Featured Projects
+## ⭐ Favourite Projects
 
 | Project | What it does | Stack |
 |---|---|---|
