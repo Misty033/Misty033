@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Misty Roy · Project Timeline</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0d1117;
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+  }
+
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: #484f58;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  h1 span { color: #3fb950; }
+
+  .timeline-wrap {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+  }
+
+  svg.timeline {
+    width: 100%;
+    overflow: visible;
+  }
+
+  /* card hover effects via CSS */
+  .proj-card {
+    cursor: pointer;
+    transition: filter 0.25s;
+  }
+
+  .proj-card:hover .card-bg {
+    filter: brightness(1.3);
+  }
+
+  .proj-card:hover .card-border {
+    opacity: 1 !important;
+  }
+
+  .proj-card:hover .card-glow {
+    opacity: 0.25 !important;
+  }
+
+  .proj-card:hover .arrow-icon {
+    opacity: 1 !important;
+    transform: translateX(3px);
+  }
+
+  .node-dot:hover {
+    r: 10;
+  }
+
+  footer-note {
+    display: block;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: #484f58;
+    text-align: center;
+    margin-top: 2rem;
+    letter-spacing: 0.08em;
+  }
+</style>
+</head>
+<body>
+
+<h1>// <span>misty.roy</span> · build timeline</h1>
+
+<div class="timeline-wrap">
+<svg class="timeline" viewBox="0 0 860 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- glows -->
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3fb950" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d2a8ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#d2a8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffa657" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffa657" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g5" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f78166" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f78166" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur4">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="blur8">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- ========== AXIS LINE ========== -->
+  <!-- year labels -->
+  <text x="60" y="488" font-family="Space Mono, monospace" font-size="10" fill="#484f58" text-anchor="middle">2023</text>
+  <text x="260" y="488" font-family="Space Mono, monospace" font-size="10" fill="#484f58" text-anchor="middle">early 2024</text>
+  <text x="480" y="488" font-family="Space Mono, monospace" font-size="10" fill="#484f58" text-anchor="middle">mid 2024</text>
+  <text x="680" y="488" font-family="Space Mono, monospace" font-size="10" fill="#484f58" text-anchor="middle">late 2024</text>
+  <text x="820" y="488" font-family="Space Mono, monospace" font-size="10" fill="#3fb950" text-anchor="middle">2025 →</text>
+
+  <!-- tick marks -->
+  <line x1="60" y1="466" x2="60" y2="474" stroke="#30363d" stroke-width="1"/>
+  <line x1="260" y1="466" x2="260" y2="474" stroke="#30363d" stroke-width="1"/>
+  <line x1="480" y1="466" x2="480" y2="474" stroke="#30363d" stroke-width="1"/>
+  <line x1="680" y1="466" x2="680" y2="474" stroke="#30363d" stroke-width="1"/>
+  <line x1="820" y1="466" x2="820" y2="474" stroke="#3fb950" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- main axis -->
+  <line x1="30" y1="468" x2="840" y2="468" stroke="#21262d" stroke-width="1.5"/>
+  <!-- moving glow on axis -->
+  <line x1="30" y1="468" x2="840" y2="468" stroke="url(#g1)" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- arrow head -->
+  <polygon points="840,464 850,468 840,472" fill="#30363d"/>
+
+
+  <!-- ========== PROJECT 1: Churn ML ========== -->
+  <!-- node on axis -->
+  <circle cx="60" cy="468" r="6" fill="#d2a8ff" class="node-dot"/>
+  <circle cx="60" cy="468" r="14" fill="url(#g3)" filter="url(#blur4)" opacity="0.5"/>
+
+  <!-- connector line going UP -->
+  <line x1="60" y1="468" x2="60" y2="320" stroke="#d2a8ff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 4"/>
+  <line x1="60" y1="320" x2="130" y2="320" stroke="#d2a8ff" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- card -->
+  <a href="https://github.com/Misty033/Credit_Card_Churn_Detection" target="_blank">
+    <g class="proj-card" transform="translate(130, 285)">
+      <rect class="card-glow" x="-4" y="-4" width="188" height="82" rx="10" fill="#d2a8ff" opacity="0" filter="url(#blur8)"/>
+      <rect class="card-bg" x="0" y="0" width="180" height="74" rx="8" fill="#161b22"/>
+      <rect class="card-border" x="0" y="0" width="180" height="74" rx="8" fill="none" stroke="#d2a8ff" stroke-width="1" opacity="0.4"/>
+      <rect x="0" y="0" width="4" height="74" rx="2" fill="#d2a8ff"/>
+      <text x="16" y="17" font-family="Space Mono, monospace" font-size="8" fill="#d2a8ff" opacity="0.7" letter-spacing="1">CLASSICAL ML · XAI</text>
+      <text x="16" y="34" font-family="Syne, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">Credit Card Churn</text>
+      <text x="16" y="49" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">XGBoost · SHAP · LIME</text>
+      <text x="16" y="63" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">explainability focused</text>
+      <text class="arrow-icon" x="158" y="42" font-family="monospace" font-size="14" fill="#d2a8ff" opacity="0" style="transition:opacity 0.2s,transform 0.2s">→</text>
+    </g>
+  </a>
+
+
+  <!-- ========== PROJECT 2: RAG Bot ========== -->
+  <circle cx="260" cy="468" r="6" fill="#58a6ff" class="node-dot"/>
+  <circle cx="260" cy="468" r="14" fill="url(#g2)" filter="url(#blur4)" opacity="0.5"/>
+
+  <!-- connector going DOWN -->
+  <line x1="260" y1="468" x2="260" y2="390" stroke="#58a6ff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 4"/>
+  <line x1="260" y1="390" x2="290" y2="390" stroke="#58a6ff" stroke-width="1" stroke-opacity="0.3"/>
+
+  <a href="https://github.com/Misty033/Government-Scheme-retrival-system-using-LLMs" target="_blank">
+    <g class="proj-card" transform="translate(290, 355)">
+      <rect class="card-glow" x="-4" y="-4" width="188" height="82" rx="10" fill="#58a6ff" opacity="0" filter="url(#blur8)"/>
+      <rect class="card-bg" x="0" y="0" width="180" height="74" rx="8" fill="#161b22"/>
+      <rect class="card-border" x="0" y="0" width="180" height="74" rx="8" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.4"/>
+      <rect x="0" y="0" width="4" height="74" rx="2" fill="#58a6ff"/>
+      <text x="16" y="17" font-family="Space Mono, monospace" font-size="8" fill="#58a6ff" opacity="0.7" letter-spacing="1">RAG · LLM</text>
+      <text x="16" y="34" font-family="Syne, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">Govt Scheme RAG Bot</text>
+      <text x="16" y="49" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">ChromaDB · Gemini · RAG</text>
+      <text x="16" y="63" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">vector search retrieval</text>
+      <text class="arrow-icon" x="158" y="42" font-family="monospace" font-size="14" fill="#58a6ff" opacity="0" style="transition:opacity 0.2s">→</text>
+    </g>
+  </a>
+
+
+  <!-- ========== PROJECT 3: NL→SQL ========== -->
+  <circle cx="480" cy="468" r="6" fill="#ffa657" class="node-dot"/>
+  <circle cx="480" cy="468" r="14" fill="url(#g4)" filter="url(#blur4)" opacity="0.5"/>
+
+  <!-- connector going UP -->
+  <line x1="480" y1="468" x2="480" y2="280" stroke="#ffa657" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 4"/>
+  <line x1="480" y1="280" x2="510" y2="280" stroke="#ffa657" stroke-width="1" stroke-opacity="0.3"/>
+
+  <a href="https://github.com/Misty033/slack-sql-bot" target="_blank">
+    <g class="proj-card" transform="translate(510, 245)">
+      <rect class="card-glow" x="-4" y="-4" width="188" height="82" rx="10" fill="#ffa657" opacity="0" filter="url(#blur8)"/>
+      <rect class="card-bg" x="0" y="0" width="180" height="74" rx="8" fill="#161b22"/>
+      <rect class="card-border" x="0" y="0" width="180" height="74" rx="8" fill="none" stroke="#ffa657" stroke-width="1" opacity="0.4"/>
+      <rect x="0" y="0" width="4" height="74" rx="2" fill="#ffa657"/>
+      <text x="16" y="17" font-family="Space Mono, monospace" font-size="8" fill="#ffa657" opacity="0.7" letter-spacing="1">NLP · INTEGRATIONS</text>
+      <text x="16" y="34" font-family="Syne, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">NL → SQL Slack Bot</text>
+      <text x="16" y="49" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">OpenAI · SQLAlchemy</text>
+      <text x="16" y="63" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">plain english to queries</text>
+      <text class="arrow-icon" x="158" y="42" font-family="monospace" font-size="14" fill="#ffa657" opacity="0" style="transition:opacity 0.2s">→</text>
+    </g>
+  </a>
+
+
+  <!-- ========== PROJECT 4: Newsletter Agent ========== -->
+  <circle cx="680" cy="468" r="6" fill="#3fb950" class="node-dot"/>
+  <circle cx="680" cy="468" r="14" fill="url(#g1)" filter="url(#blur4)" opacity="0.5"/>
+
+  <!-- connector going DOWN -->
+  <line x1="680" y1="468" x2="680" y2="390" stroke="#3fb950" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 4"/>
+  <line x1="680" y1="390" x2="490" y2="390" stroke="#3fb950" stroke-width="1" stroke-opacity="0.3"/>
+
+  <a href="https://github.com/Misty033/ai_newsletter_agent" target="_blank">
+    <g class="proj-card" transform="translate(490, 355)">
+      <rect class="card-glow" x="-4" y="-4" width="188" height="82" rx="10" fill="#3fb950" opacity="0" filter="url(#blur8)"/>
+      <rect class="card-bg" x="0" y="0" width="180" height="74" rx="8" fill="#161b22"/>
+      <rect class="card-border" x="0" y="0" width="180" height="74" rx="8" fill="none" stroke="#3fb950" stroke-width="1" opacity="0.4"/>
+      <rect x="0" y="0" width="4" height="74" rx="2" fill="#3fb950"/>
+      <text x="16" y="17" font-family="Space Mono, monospace" font-size="8" fill="#3fb950" opacity="0.7" letter-spacing="1">AGENTIC AI</text>
+      <text x="16" y="34" font-family="Syne, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">AI Newsletter Agent</text>
+      <text x="16" y="49" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">LangChain · Airflow · FastAPI</text>
+      <text x="16" y="63" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">autonomous pipeline</text>
+      <text class="arrow-icon" x="158" y="42" font-family="monospace" font-size="14" fill="#3fb950" opacity="0" style="transition:opacity 0.2s">→</text>
+    </g>
+  </a>
+
+
+  <!-- ========== PROJECT 5: Code Review ========== -->
+  <circle cx="820" cy="468" r="7" fill="#f78166" class="node-dot"/>
+  <circle cx="820" cy="468" r="16" fill="url(#g5)" filter="url(#blur4)" opacity="0.6"/>
+  <!-- "latest" badge on node -->
+  <rect x="800" y="444" width="40" height="14" rx="4" fill="#f78166" opacity="0.15"/>
+  <text x="820" y="454" font-family="Space Mono, monospace" font-size="7" fill="#f78166" text-anchor="middle">latest</text>
+
+  <!-- connector going UP -->
+  <line x1="820" y1="468" x2="820" y2="140" stroke="#f78166" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 4"/>
+  <line x1="820" y1="140" x2="660" y2="140" stroke="#f78166" stroke-width="1" stroke-opacity="0.3"/>
+
+  <a href="https://github.com/Misty033/ai-code-review-test-generation-pipeline-v1" target="_blank">
+    <g class="proj-card" transform="translate(480, 105)">
+      <rect class="card-glow" x="-4" y="-4" width="188" height="82" rx="10" fill="#f78166" opacity="0" filter="url(#blur8)"/>
+      <rect class="card-bg" x="0" y="0" width="180" height="74" rx="8" fill="#161b22"/>
+      <rect class="card-border" x="0" y="0" width="180" height="74" rx="8" fill="none" stroke="#f78166" stroke-width="1.5" opacity="0.6"/>
+      <rect x="0" y="0" width="4" height="74" rx="2" fill="#f78166"/>
+      <text x="16" y="17" font-family="Space Mono, monospace" font-size="8" fill="#f78166" opacity="0.7" letter-spacing="1">LOCAL LLM · DEVTOOLS</text>
+      <text x="16" y="34" font-family="Syne, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">AI Code Review</text>
+      <text x="16" y="49" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">Ollama · LLM · AST parser</text>
+      <text x="16" y="63" font-family="Space Mono, monospace" font-size="8" fill="#7d8590">auto test generation</text>
+      <text class="arrow-icon" x="158" y="42" font-family="monospace" font-size="14" fill="#f78166" opacity="0" style="transition:opacity 0.2s">→</text>
+    </g>
+  </a>
+
+</svg>
+</div>
+
+<footer-note>hover cards · click to open repo</footer-note>
+
+</body>
+</html>
