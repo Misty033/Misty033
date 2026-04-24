@@ -76,13 +76,6 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 ![Timeline](./timeline.svg)
 
-| Project | What it does | Stack |
-|---|---|---|
-| [AI Newsletter Agent](https://github.com/Misty033/ai_newsletter_agent) | Autonomous news curation + delivery pipeline | Postgres, Airflow, LLM, Docker |
-| [Govt Scheme RAG Bot](https://github.com/Misty033/Government-Scheme-retrival-system-using-LLMs) | Retrieves & explains government schemes via LLM | RAG, ChromaDB, Langchain, Ollama |
-| [NL→SQL Slack Bot](https://github.com/Misty033/slack-sql-bot) | Converts plain English to SQL in Slack | Postgres, Gemini, Slack, Railway |
-| [Churn classification with ML & XAI](https://github.com/Misty033/Credit_Card_Churn_Detection) | Credit card churn classification using classical Ml and SHAP & LIME | ML, GCP, FASTAPI, Docker |
-
 ---
 
 ## 🌐 Connect With Me
