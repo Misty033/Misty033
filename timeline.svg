@@ -1,6 +1,5 @@
-<svg viewBox="0 0 920 580" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+<svg viewBox="0 0 920 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
   <defs>
-    <!-- card glows -->
     <radialGradient id="g1" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#e57373" stop-opacity="1"/>
       <stop offset="100%" stop-color="#e57373" stop-opacity="0"/>
@@ -25,179 +24,279 @@
     <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
   </defs>
 
-  <!-- ── background ── -->
-  <rect width="920" height="580" fill="#fafafa"/>
+  <!-- ── dark background ── -->
+  <rect width="920" height="560" fill="#0d1117" rx="12"/>
 
-  <!-- ── axis ── -->
-  <line x1="30" y1="340" x2="885" y2="340" stroke="#d0d7de" stroke-width="1.5"/>
-  <polygon points="885,336 895,340 885,344" fill="#d0d7de"/>
+  <!-- ═══════════════════════════════════════════
+       HAND-DRAWN DOODLES — fill negative space
+       All use stroke-linecap="round" stroke-linejoin="round"
+       for a soft hand-drawn feel
+  ════════════════════════════════════════════ -->
+
+  <!-- top-left corner: tiny `if` block doodle -->
+  <g opacity="0.75" stroke-linecap="round" stroke-linejoin="round">
+    <text x="14" y="22" font-family="'Courier New',monospace" font-size="9" fill="#4db6ac">if model.fit():</text>
+    <text x="22" y="34" font-family="'Courier New',monospace" font-size="9" fill="#64b5f6">  deploy() ✓</text>
+  </g>
+
+  <!-- top-right: tiny scatter plot doodle -->
+  <g opacity="0.8" stroke="#e57373" stroke-width="1.2" stroke-linecap="round">
+    <line x1="840" y1="55" x2="840" y2="15"/>
+    <line x1="840" y1="55" x2="900" y2="55"/>
+    <circle cx="850" cy="45" r="2" fill="#e57373"/>
+    <circle cx="858" cy="38" r="2" fill="#e57373"/>
+    <circle cx="864" cy="42" r="2" fill="#ffb74d"/>
+    <circle cx="872" cy="32" r="2" fill="#ffb74d"/>
+    <circle cx="879" cy="28" r="2" fill="#4db6ac"/>
+    <circle cx="886" cy="22" r="2" fill="#4db6ac"/>
+    <line x1="848" y1="47" x2="888" y2="21" stroke="#ffffff" stroke-opacity="0.45" stroke-dasharray="2 2"/>
+    <text x="843" y="13" font-family="'Courier New',monospace" font-size="7" fill="#8b949e">loss↓</text>
+  </g>
+
+  <!-- top area between card 1 and card 3: tiny neural net doodle -->
+  <g opacity="0.7" stroke-linecap="round">
+    <circle cx="308" cy="30" r="4" fill="none" stroke="#64b5f6" stroke-width="1.2"/>
+    <circle cx="308" cy="48" r="4" fill="none" stroke="#64b5f6" stroke-width="1.2"/>
+    <circle cx="308" cy="66" r="4" fill="none" stroke="#64b5f6" stroke-width="1.2"/>
+    <circle cx="332" cy="36" r="4" fill="none" stroke="#4db6ac" stroke-width="1.2"/>
+    <circle cx="332" cy="57" r="4" fill="none" stroke="#4db6ac" stroke-width="1.2"/>
+    <circle cx="356" cy="47" r="4" fill="none" stroke="#ffb74d" stroke-width="1.2"/>
+    <line x1="312" y1="30" x2="328" y2="36" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.35"/>
+    <line x1="312" y1="48" x2="328" y2="36" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.35"/>
+    <line x1="312" y1="66" x2="328" y2="36" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.35"/>
+    <line x1="312" y1="30" x2="328" y2="57" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.35"/>
+    <line x1="312" y1="48" x2="328" y2="57" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.35"/>
+    <line x1="312" y1="66" x2="328" y2="57" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.35"/>
+    <line x1="336" y1="36" x2="352" y2="47" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.35"/>
+    <line x1="336" y1="57" x2="352" y2="47" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.35"/>
+    <text x="305" y="82" font-family="'Courier New',monospace" font-size="7" fill="#8b949e">neural net</text>
+  </g>
+
+  <!-- top area far right: tiny git branch doodle -->
+  <g opacity="0.75" stroke-linecap="round" stroke-linejoin="round">
+    <text x="820" y="85" font-family="'Courier New',monospace" font-size="8" fill="#8b949e">git branch</text>
+    <line x1="826" y1="92" x2="826" y2="118" stroke="#4db6ac" stroke-width="1.4"/>
+    <path d="M826 100 Q840 100 840 92" fill="none" stroke="#ffb74d" stroke-width="1.4"/>
+    <line x1="840" y1="92" x2="840" y2="80" stroke="#ffb74d" stroke-width="1.4"/>
+    <circle cx="826" cy="92" r="2.8" fill="#4db6ac"/>
+    <circle cx="826" cy="107" r="2.8" fill="#4db6ac"/>
+    <circle cx="826" cy="118" r="2.8" fill="#4db6ac"/>
+    <circle cx="840" cy="92" r="2.8" fill="#ffb74d"/>
+    <circle cx="840" cy="80" r="2.8" fill="#ffb74d"/>
+  </g>
+
+  <!-- left side: { } brackets doodle -->
+  <g opacity="0.6" stroke-linecap="round">
+    <text x="10" y="400" font-family="'Courier New',monospace" font-size="28" fill="#64b5f6" stroke="#64b5f6" stroke-width="0.3">{</text>
+    <text x="10" y="440" font-family="'Courier New',monospace" font-size="9" fill="#8b949e">  vectors</text>
+    <text x="10" y="453" font-family="'Courier New',monospace" font-size="9" fill="#8b949e">  embeddings</text>
+    <text x="10" y="466" font-family="'Courier New',monospace" font-size="9" fill="#8b949e">  tokens</text>
+    <text x="10" y="482" font-family="'Courier New',monospace" font-size="28" fill="#64b5f6" stroke="#64b5f6" stroke-width="0.3">}</text>
+  </g>
+
+  <!-- bottom-left: tiny bar chart doodle -->
+  <g opacity="0.75" stroke-linecap="round">
+    <text x="14" y="510" font-family="'Courier New',monospace" font-size="7" fill="#8b949e">accuracy</text>
+    <rect x="14" y="493" width="7" height="14" rx="1.5" fill="#e57373" opacity="0.75"/>
+    <rect x="24" y="487" width="7" height="20" rx="1.5" fill="#ffb74d" opacity="0.75"/>
+    <rect x="34" y="481" width="7" height="26" rx="1.5" fill="#4db6ac" opacity="0.75"/>
+    <rect x="44" y="476" width="7" height="31" rx="1.5" fill="#64b5f6" opacity="0.75"/>
+    <line x1="12" y1="508" x2="56" y2="508" stroke="#8b949e" stroke-width="0.8"/>
+  </g>
+
+  <!-- bottom-right: tiny for-loop doodle -->
+  <g opacity="0.75">
+    <text x="800" y="490" font-family="'Courier New',monospace" font-size="8.5" fill="#ba68c8">for epoch in</text>
+    <text x="800" y="502" font-family="'Courier New',monospace" font-size="8.5" fill="#ba68c8">  range(∞):</text>
+    <text x="808" y="514" font-family="'Courier New',monospace" font-size="8.5" fill="#4db6ac">  learn()</text>
+    <text x="808" y="526" font-family="'Courier New',monospace" font-size="8.5" fill="#64b5f6">  improve()</text>
+  </g>
+
+  <!-- comment lines -->
+  <text x="200" y="18" font-family="'Courier New',monospace" font-size="8" fill="#8b949e" opacity="0.6"># building things that matter</text>
+  <text x="530" y="545" font-family="'Courier New',monospace" font-size="8" fill="#8b949e" opacity="0.55">/* timeline of shipped projects */</text>
+
+  <!-- squiggle underline near axis -->
+  <path d="M30 375 Q60 371 90 375 Q120 379 150 375 Q180 371 210 375" fill="none" stroke="#8b949e" stroke-width="0.8" stroke-opacity="0.35" stroke-linecap="round"/>
+
+  <!-- diamond accents -->
+  <g opacity="0.55" fill="none" stroke-width="1.2" stroke-linecap="round">
+    <polygon points="55,58 60,50 65,58 60,66" stroke="#e57373"/>
+    <polygon points="70,35 74,29 78,35 74,41" stroke="#ffb74d"/>
+    <polygon points="388,470 393,462 398,470 393,478" stroke="#4db6ac"/>
+    <polygon points="412,500 416,494 420,500 416,506" stroke="#64b5f6"/>
+  </g>
+
+  <!-- sparkles -->
+  <g opacity="0.6" fill="#ffffff">
+    <text x="792" y="425" font-family="serif" font-size="10">✦</text>
+    <text x="238" y="82" font-family="serif" font-size="8">✦</text>
+    <text x="400" y="510" font-family="serif" font-size="7">✦</text>
+    <text x="680" y="48" font-family="serif" font-size="9">✦</text>
+  </g>
+
+  <!-- inline comment beside axis -->
+  <text x="30" y="328" font-family="'Courier New',monospace" font-size="7.5" fill="#8b949e" opacity="0.55">// project history</text>
+
+  <!-- ═══════════════════════════════════════════
+       AXIS
+  ════════════════════════════════════════════ -->
+  <line x1="30" y1="340" x2="878" y2="340" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="878,336 888,340 878,344" fill="#30363d"/>
 
   <!-- year labels -->
-  <text x="88"  y="360" font-family="'Segoe UI Mono','Courier New',monospace" font-size="9" fill="#8c9198" text-anchor="middle">2024</text>
-  <text x="258" y="360" font-family="'Segoe UI Mono','Courier New',monospace" font-size="9" fill="#8c9198" text-anchor="middle">2025</text>
-  <text x="430" y="360" font-family="'Segoe UI Mono','Courier New',monospace" font-size="9" fill="#8c9198" text-anchor="middle">2026</text>
-  <text x="600" y="360" font-family="'Segoe UI Mono','Courier New',monospace" font-size="9" fill="#8c9198" text-anchor="middle">2026</text>
-  <text x="770" y="360" font-family="'Segoe UI Mono','Courier New',monospace" font-size="9" fill="#7c57a8" text-anchor="middle">2026 ·latest</text>
+  <text x="88"  y="358" font-family="'Courier New',monospace" font-size="9" fill="#484f58" text-anchor="middle">2024</text>
+  <text x="258" y="358" font-family="'Courier New',monospace" font-size="9" fill="#484f58" text-anchor="middle">2025</text>
+  <text x="430" y="358" font-family="'Courier New',monospace" font-size="9" fill="#484f58" text-anchor="middle">2026</text>
+  <text x="600" y="358" font-family="'Courier New',monospace" font-size="9" fill="#484f58" text-anchor="middle">2026</text>
+  <text x="770" y="358" font-family="'Courier New',monospace" font-size="9" fill="#7c57a8" text-anchor="middle">2026 · latest</text>
 
-  <!-- tick marks -->
-  <line x1="88"  y1="336" x2="88"  y2="344" stroke="#d0d7de" stroke-width="1"/>
-  <line x1="258" y1="336" x2="258" y2="344" stroke="#d0d7de" stroke-width="1"/>
-  <line x1="430" y1="336" x2="430" y2="344" stroke="#d0d7de" stroke-width="1"/>
-  <line x1="600" y1="336" x2="600" y2="344" stroke="#d0d7de" stroke-width="1"/>
-  <line x1="770" y1="336" x2="770" y2="344" stroke="#ba68c8" stroke-width="1" stroke-opacity="0.6"/>
+  <!-- ticks -->
+  <line x1="88"  y1="336" x2="88"  y2="344" stroke="#30363d" stroke-width="1"/>
+  <line x1="258" y1="336" x2="258" y2="344" stroke="#30363d" stroke-width="1"/>
+  <line x1="430" y1="336" x2="430" y2="344" stroke="#30363d" stroke-width="1"/>
+  <line x1="600" y1="336" x2="600" y2="344" stroke="#30363d" stroke-width="1"/>
+  <line x1="770" y1="336" x2="770" y2="344" stroke="#ba68c8" stroke-width="1" stroke-opacity="0.5"/>
 
 
-  <!-- ══════════════════════════════════════
-       PROJECT 1 — Credit Card Churn  (UP)
-       ══════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════
+       PROJECT 1 — Credit Card Churn (UP)
+  ════════════════════════════════════════════ -->
   <circle cx="88" cy="340" r="6" fill="#e57373"/>
-  <circle cx="88" cy="340" r="14" fill="url(#g1)" filter="url(#blur4)" opacity="0.45"/>
-  <!-- connector -->
-  <line x1="88" y1="340" x2="88" y2="175" stroke="#e57373" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
-  <line x1="88" y1="175" x2="118" y2="175" stroke="#e57373" stroke-width="1" stroke-opacity="0.25"/>
-  <!-- square card 140×140 -->
+  <circle cx="88" cy="340" r="14" fill="url(#g1)" filter="url(#blur4)" opacity="0.4"/>
+  <line x1="88" y1="334" x2="88" y2="182" stroke="#e57373" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="3 4"/>
+  <line x1="88" y1="182" x2="118" y2="182" stroke="#e57373" stroke-width="1" stroke-opacity="0.2"/>
   <a href="https://github.com/Misty033/Credit_Card_Churn_Detection" target="_blank">
-    <g class="proj-card">
-      <rect x="114" y="105" width="148" height="148" rx="10" fill="#e57373" opacity="0" filter="url(#blur6)"/>
-      <rect x="118" y="109" width="140" height="140" rx="9" fill="#fff" stroke="#e57373" stroke-width="1" stroke-opacity="0.35"/>
-      <!-- top accent bar -->
-      <rect x="118" y="109" width="140" height="4" rx="9" fill="#e57373" opacity="0.7"/>
-      <rect x="118" y="111" width="140" height="2" fill="#e57373" opacity="0.7"/>
-      <!-- left bar -->
-      <rect x="118" y="109" width="4" height="140" rx="9" fill="#e57373" opacity="0.7"/>
-      <rect x="120" y="109" width="2" height="140" fill="#e57373" opacity="0.7"/>
-      <!-- tag -->
-      <text x="132" y="127" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#e57373" opacity="0.8" letter-spacing="0.5">CLASSICAL ML · XAI</text>
-      <!-- name -->
-      <text x="132" y="145" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Credit Card</text>
-      <text x="132" y="160" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Churn</text>
-      <!-- stack -->
-      <text x="132" y="178" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7.5" fill="#57606a">XGBoost · SHAP · LIME</text>
-      <!-- year badge -->
-      <rect x="132" y="187" width="34" height="12" rx="4" fill="#e57373" opacity="0.1"/>
-      <text x="149" y="196" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#e57373" text-anchor="middle">2024</text>
-      <!-- arrow -->
-      <text x="237" y="237" font-family="monospace" font-size="13" fill="#e57373" opacity="0.5">→</text>
+    <g>
+      <rect x="114" y="108" width="148" height="148" rx="10" fill="#e57373" opacity="0" filter="url(#blur6)"/>
+      <rect x="118" y="112" width="140" height="140" rx="9" fill="#161b22" stroke="#e57373" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="118" y="112" width="140" height="4" rx="9" fill="#e57373" opacity="0.65"/>
+      <rect x="118" y="114" width="140" height="2" fill="#e57373" opacity="0.65"/>
+      <rect x="118" y="112" width="4" height="140" rx="9" fill="#e57373" opacity="0.65"/>
+      <rect x="120" y="112" width="2" height="140" fill="#e57373" opacity="0.65"/>
+      <text x="132" y="130" font-family="'Courier New',monospace" font-size="7" fill="#e57373" opacity="0.75" letter-spacing="0.5">CLASSICAL ML · XAI</text>
+      <text x="132" y="149" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#e6edf3">Credit Card</text>
+      <text x="132" y="164" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#e6edf3">Churn</text>
+      <text x="132" y="181" font-family="'Courier New',monospace" font-size="7.5" fill="#8b949e">XGBoost · SHAP · LIME</text>
+      <rect x="132" y="190" width="34" height="12" rx="4" fill="#e57373" opacity="0.12"/>
+      <text x="149" y="199" font-family="'Courier New',monospace" font-size="7" fill="#e57373" text-anchor="middle">2024</text>
+      <text x="237" y="240" font-family="monospace" font-size="13" fill="#e57373" opacity="0.4">→</text>
     </g>
   </a>
 
 
-  <!-- ══════════════════════════════════════
-       PROJECT 2 — Govt Scheme RAG  (DOWN)
-       ══════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════
+       PROJECT 2 — Govt Scheme RAG (DOWN)
+  ════════════════════════════════════════════ -->
   <circle cx="258" cy="340" r="6" fill="#4db6ac"/>
-  <circle cx="258" cy="340" r="14" fill="url(#g2)" filter="url(#blur4)" opacity="0.45"/>
-  <!-- connector going DOWN -->
-  <line x1="258" y1="340" x2="258" y2="390" stroke="#4db6ac" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
-  <line x1="258" y1="390" x2="288" y2="390" stroke="#4db6ac" stroke-width="1" stroke-opacity="0.25"/>
-  <!-- card below axis -->
+  <circle cx="258" cy="340" r="14" fill="url(#g2)" filter="url(#blur4)" opacity="0.4"/>
+  <line x1="258" y1="346" x2="258" y2="384" stroke="#4db6ac" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="3 4"/>
+  <line x1="258" y1="384" x2="288" y2="384" stroke="#4db6ac" stroke-width="1" stroke-opacity="0.2"/>
   <a href="https://github.com/Misty033/Government-Scheme-retrival-system-using-LLMs" target="_blank">
-    <g class="proj-card">
-      <rect x="284" y="386" width="148" height="148" rx="10" fill="#4db6ac" opacity="0" filter="url(#blur6)"/>
-      <rect x="288" y="390" width="140" height="140" rx="9" fill="#fff" stroke="#4db6ac" stroke-width="1" stroke-opacity="0.35"/>
-      <rect x="288" y="390" width="140" height="4" rx="9" fill="#4db6ac" opacity="0.7"/>
-      <rect x="288" y="392" width="140" height="2" fill="#4db6ac" opacity="0.7"/>
-      <rect x="288" y="390" width="4" height="140" rx="9" fill="#4db6ac" opacity="0.7"/>
-      <rect x="290" y="390" width="2" height="140" fill="#4db6ac" opacity="0.7"/>
-      <text x="302" y="408" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#4db6ac" opacity="0.8" letter-spacing="0.5">RAG · LLM</text>
-      <text x="302" y="426" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Govt Scheme</text>
-      <text x="302" y="441" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">RAG Bot</text>
-      <text x="302" y="459" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7.5" fill="#57606a">ChromaDB · Gemini</text>
-      <rect x="302" y="468" width="34" height="12" rx="4" fill="#4db6ac" opacity="0.1"/>
-      <text x="319" y="477" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#4db6ac" text-anchor="middle">2025</text>
-      <text x="407" y="518" font-family="monospace" font-size="13" fill="#4db6ac" opacity="0.5">→</text>
+    <g>
+      <rect x="284" y="380" width="148" height="148" rx="10" fill="#4db6ac" opacity="0" filter="url(#blur6)"/>
+      <rect x="288" y="384" width="140" height="140" rx="9" fill="#161b22" stroke="#4db6ac" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="288" y="384" width="140" height="4" rx="9" fill="#4db6ac" opacity="0.65"/>
+      <rect x="288" y="386" width="140" height="2" fill="#4db6ac" opacity="0.65"/>
+      <rect x="288" y="384" width="4" height="140" rx="9" fill="#4db6ac" opacity="0.65"/>
+      <rect x="290" y="384" width="2" height="140" fill="#4db6ac" opacity="0.65"/>
+      <text x="302" y="402" font-family="'Courier New',monospace" font-size="7" fill="#4db6ac" opacity="0.75" letter-spacing="0.5">RAG · LLM</text>
+      <text x="302" y="421" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#e6edf3">Govt Scheme</text>
+      <text x="302" y="436" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#e6edf3">RAG Bot</text>
+      <text x="302" y="453" font-family="'Courier New',monospace" font-size="7.5" fill="#8b949e">ChromaDB · Gemini</text>
+      <rect x="302" y="462" width="34" height="12" rx="4" fill="#4db6ac" opacity="0.12"/>
+      <text x="319" y="471" font-family="'Courier New',monospace" font-size="7" fill="#4db6ac" text-anchor="middle">2025</text>
+      <text x="407" y="512" font-family="monospace" font-size="13" fill="#4db6ac" opacity="0.4">→</text>
     </g>
   </a>
 
 
-  <!-- ══════════════════════════════════════
-       PROJECT 3 — NL→SQL  (UP)
-       ══════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════
+       PROJECT 3 — NL→SQL (UP)
+  ════════════════════════════════════════════ -->
   <circle cx="430" cy="340" r="6" fill="#64b5f6"/>
-  <circle cx="430" cy="340" r="14" fill="url(#g3)" filter="url(#blur4)" opacity="0.45"/>
-  <line x1="430" y1="340" x2="430" y2="190" stroke="#64b5f6" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
-  <line x1="430" y1="190" x2="460" y2="190" stroke="#64b5f6" stroke-width="1" stroke-opacity="0.25"/>
+  <circle cx="430" cy="340" r="14" fill="url(#g3)" filter="url(#blur4)" opacity="0.4"/>
+  <line x1="430" y1="334" x2="430" y2="192" stroke="#64b5f6" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="3 4"/>
+  <line x1="430" y1="192" x2="460" y2="192" stroke="#64b5f6" stroke-width="1" stroke-opacity="0.2"/>
   <a href="https://github.com/Misty033/slack-sql-bot" target="_blank">
-    <g class="proj-card">
-      <rect x="456" y="186" width="148" height="148" rx="10" fill="#64b5f6" opacity="0" filter="url(#blur6)"/>
-      <rect x="460" y="190" width="140" height="140" rx="9" fill="#fff" stroke="#64b5f6" stroke-width="1" stroke-opacity="0.35"/>
-      <rect x="460" y="190" width="140" height="4" rx="9" fill="#64b5f6" opacity="0.7"/>
-      <rect x="460" y="192" width="140" height="2" fill="#64b5f6" opacity="0.7"/>
-      <rect x="460" y="190" width="4" height="140" rx="9" fill="#64b5f6" opacity="0.7"/>
-      <rect x="462" y="190" width="2" height="140" fill="#64b5f6" opacity="0.7"/>
-      <text x="474" y="208" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#64b5f6" opacity="0.8" letter-spacing="0.5">NLP · INTEGRATIONS</text>
-      <text x="474" y="226" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">NL → SQL</text>
-      <text x="474" y="241" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Slack Bot</text>
-      <text x="474" y="259" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7.5" fill="#57606a">OpenAI · SQLAlchemy</text>
-      <rect x="474" y="268" width="34" height="12" rx="4" fill="#64b5f6" opacity="0.1"/>
-      <text x="491" y="277" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#64b5f6" text-anchor="middle">2026</text>
-      <text x="579" y="318" font-family="monospace" font-size="13" fill="#64b5f6" opacity="0.5">→</text>
+    <g>
+      <rect x="456" y="188" width="148" height="148" rx="10" fill="#64b5f6" opacity="0" filter="url(#blur6)"/>
+      <rect x="460" y="192" width="140" height="140" rx="9" fill="#161b22" stroke="#64b5f6" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="460" y="192" width="140" height="4" rx="9" fill="#64b5f6" opacity="0.65"/>
+      <rect x="460" y="194" width="140" height="2" fill="#64b5f6" opacity="0.65"/>
+      <rect x="460" y="192" width="4" height="140" rx="9" fill="#64b5f6" opacity="0.65"/>
+      <rect x="462" y="192" width="2" height="140" fill="#64b5f6" opacity="0.65"/>
+      <text x="474" y="210" font-family="'Courier New',monospace" font-size="7" fill="#64b5f6" opacity="0.75" letter-spacing="0.5">NLP · INTEGRATIONS</text>
+      <text x="474" y="229" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#e6edf3">NL → SQL</text>
+      <text x="474" y="244" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#e6edf3">Slack Bot</text>
+      <text x="474" y="261" font-family="'Courier New',monospace" font-size="7.5" fill="#8b949e">OpenAI · SQLAlchemy</text>
+      <rect x="474" y="270" width="34" height="12" rx="4" fill="#64b5f6" opacity="0.12"/>
+      <text x="491" y="279" font-family="'Courier New',monospace" font-size="7" fill="#64b5f6" text-anchor="middle">2026</text>
+      <text x="579" y="320" font-family="monospace" font-size="13" fill="#64b5f6" opacity="0.4">→</text>
     </g>
   </a>
 
 
-  <!-- ══════════════════════════════════════
-       PROJECT 4 — Newsletter Agent  (DOWN)
-       ══════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════
+       PROJECT 4 — Newsletter Agent (DOWN)
+  ════════════════════════════════════════════ -->
   <circle cx="600" cy="340" r="6" fill="#ffb74d"/>
-  <circle cx="600" cy="340" r="14" fill="url(#g4)" filter="url(#blur4)" opacity="0.45"/>
-  <line x1="600" y1="340" x2="600" y2="390" stroke="#ffb74d" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
-  <line x1="600" y1="390" x2="460" y2="390" stroke="#ffb74d" stroke-width="1" stroke-opacity="0.25"/>
+  <circle cx="600" cy="340" r="14" fill="url(#g4)" filter="url(#blur4)" opacity="0.4"/>
+  <line x1="600" y1="346" x2="600" y2="384" stroke="#ffb74d" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="3 4"/>
+  <line x1="600" y1="384" x2="462" y2="384" stroke="#ffb74d" stroke-width="1" stroke-opacity="0.2"/>
   <a href="https://github.com/Misty033/ai_newsletter_agent" target="_blank">
-    <g class="proj-card">
-      <rect x="456" y="386" width="148" height="148" rx="10" fill="#ffb74d" opacity="0" filter="url(#blur6)"/>
-      <rect x="460" y="390" width="140" height="140" rx="9" fill="#fff" stroke="#ffb74d" stroke-width="1" stroke-opacity="0.35"/>
-      <rect x="460" y="390" width="140" height="4" rx="9" fill="#ffb74d" opacity="0.7"/>
-      <rect x="460" y="392" width="140" height="2" fill="#ffb74d" opacity="0.7"/>
-      <rect x="460" y="390" width="4" height="140" rx="9" fill="#ffb74d" opacity="0.7"/>
-      <rect x="462" y="390" width="2" height="140" fill="#ffb74d" opacity="0.7"/>
-      <text x="474" y="408" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#ffb74d" opacity="0.8" letter-spacing="0.5">AGENTIC AI</text>
-      <text x="474" y="426" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">AI Newsletter</text>
-      <text x="474" y="441" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Agent</text>
-      <text x="474" y="459" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7.5" fill="#57606a">LangChain · Airflow</text>
-      <rect x="474" y="468" width="34" height="12" rx="4" fill="#ffb74d" opacity="0.1"/>
-      <text x="491" y="477" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#ffb74d" text-anchor="middle">2026</text>
-      <text x="579" y="518" font-family="monospace" font-size="13" fill="#ffb74d" opacity="0.5">→</text>
+    <g>
+      <rect x="458" y="380" width="148" height="148" rx="10" fill="#ffb74d" opacity="0" filter="url(#blur6)"/>
+      <rect x="462" y="384" width="140" height="140" rx="9" fill="#161b22" stroke="#ffb74d" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="462" y="384" width="140" height="4" rx="9" fill="#ffb74d" opacity="0.65"/>
+      <rect x="462" y="386" width="140" height="2" fill="#ffb74d" opacity="0.65"/>
+      <rect x="462" y="384" width="4" height="140" rx="9" fill="#ffb74d" opacity="0.65"/>
+      <rect x="464" y="384" width="2" height="140" fill="#ffb74d" opacity="0.65"/>
+      <text x="476" y="402" font-family="'Courier New',monospace" font-size="7" fill="#ffb74d" opacity="0.75" letter-spacing="0.5">AGENTIC AI</text>
+      <text x="476" y="421" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#e6edf3">AI Newsletter</text>
+      <text x="476" y="436" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#e6edf3">Agent</text>
+      <text x="476" y="453" font-family="'Courier New',monospace" font-size="7.5" fill="#8b949e">LangChain · Airflow</text>
+      <rect x="476" y="462" width="34" height="12" rx="4" fill="#ffb74d" opacity="0.12"/>
+      <text x="493" y="471" font-family="'Courier New',monospace" font-size="7" fill="#ffb74d" text-anchor="middle">2026</text>
+      <text x="581" y="512" font-family="monospace" font-size="13" fill="#ffb74d" opacity="0.4">→</text>
     </g>
   </a>
 
 
-  <!-- ══════════════════════════════════════
-       PROJECT 5 — AI Code Review  (UP)
-       ══════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════
+       PROJECT 5 — AI Code Review (UP)
+  ════════════════════════════════════════════ -->
   <circle cx="770" cy="340" r="7" fill="#ba68c8"/>
-  <circle cx="770" cy="340" r="16" fill="url(#g5)" filter="url(#blur4)" opacity="0.5"/>
-  <!-- latest badge -->
-  <rect x="750" y="318" width="40" height="13" rx="4" fill="#ba68c8" opacity="0.12"/>
-  <text x="770" y="327" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#ba68c8" text-anchor="middle">latest</text>
-  <!-- connector -->
-  <line x1="770" y1="340" x2="770" y2="155" stroke="#ba68c8" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="3 4"/>
-  <line x1="770" y1="155" x2="622" y2="155" stroke="#ba68c8" stroke-width="1" stroke-opacity="0.25"/>
+  <circle cx="770" cy="340" r="16" fill="url(#g5)" filter="url(#blur4)" opacity="0.45"/>
+  <rect x="750" y="318" width="40" height="13" rx="4" fill="#ba68c8" opacity="0.1"/>
+  <text x="770" y="327" font-family="'Courier New',monospace" font-size="7" fill="#ba68c8" text-anchor="middle">latest</text>
+  <line x1="770" y1="334" x2="770" y2="162" stroke="#ba68c8" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="3 4"/>
+  <line x1="770" y1="162" x2="622" y2="162" stroke="#ba68c8" stroke-width="1" stroke-opacity="0.2"/>
   <a href="https://github.com/Misty033/ai-code-review-test-generation-pipeline-v1" target="_blank">
-    <g class="proj-card">
-      <rect x="618" y="151" width="148" height="148" rx="10" fill="#ba68c8" opacity="0" filter="url(#blur6)"/>
-      <rect x="622" y="155" width="140" height="140" rx="9" fill="#fff" stroke="#ba68c8" stroke-width="1.5" stroke-opacity="0.5"/>
-      <rect x="622" y="155" width="140" height="4" rx="9" fill="#ba68c8" opacity="0.75"/>
-      <rect x="622" y="157" width="140" height="2" fill="#ba68c8" opacity="0.75"/>
-      <rect x="622" y="155" width="4" height="140" rx="9" fill="#ba68c8" opacity="0.75"/>
-      <rect x="624" y="155" width="2" height="140" fill="#ba68c8" opacity="0.75"/>
-      <text x="636" y="173" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#ba68c8" opacity="0.8" letter-spacing="0.5">LOCAL LLM · DEVTOOLS</text>
-      <text x="636" y="191" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">AI Code</text>
-      <text x="636" y="206" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#1f2328">Review</text>
-      <text x="636" y="224" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7.5" fill="#57606a">Ollama · LLM · AST</text>
-      <rect x="636" y="233" width="34" height="12" rx="4" fill="#ba68c8" opacity="0.1"/>
-      <text x="653" y="242" font-family="'Segoe UI Mono','Courier New',monospace" font-size="7" fill="#ba68c8" text-anchor="middle">2026</text>
-      <text x="741" y="283" font-family="monospace" font-size="13" fill="#ba68c8" opacity="0.5">→</text>
+    <g>
+      <rect x="618" y="158" width="148" height="148" rx="10" fill="#ba68c8" opacity="0" filter="url(#blur6)"/>
+      <rect x="622" y="162" width="140" height="140" rx="9" fill="#161b22" stroke="#ba68c8" stroke-width="1.5" stroke-opacity="0.4"/>
+      <rect x="622" y="162" width="140" height="4" rx="9" fill="#ba68c8" opacity="0.7"/>
+      <rect x="622" y="164" width="140" height="2" fill="#ba68c8" opacity="0.7"/>
+      <rect x="622" y="162" width="4" height="140" rx="9" fill="#ba68c8" opacity="0.7"/>
+      <rect x="624" y="162" width="2" height="140" fill="#ba68c8" opacity="0.7"/>
+      <text x="636" y="180" font-family="'Courier New',monospace" font-size="7" fill="#ba68c8" opacity="0.75" letter-spacing="0.5">LOCAL LLM · DEVTOOLS</text>
+      <text x="636" y="199" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#e6edf3">AI Code</text>
+      <text x="636" y="214" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="700" fill="#e6edf3">Review</text>
+      <text x="636" y="231" font-family="'Courier New',monospace" font-size="7.5" fill="#8b949e">Ollama · LLM · AST</text>
+      <rect x="636" y="240" width="34" height="12" rx="4" fill="#ba68c8" opacity="0.12"/>
+      <text x="653" y="249" font-family="'Courier New',monospace" font-size="7" fill="#ba68c8" text-anchor="middle">2026</text>
+      <text x="741" y="290" font-family="monospace" font-size="13" fill="#ba68c8" opacity="0.4">→</text>
     </g>
   </a>
 
 
-  <!-- ══════════════════════════════════════
-       MORE → link  (far right)
-       ══════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════
+       MORE → pill
+  ════════════════════════════════════════════ -->
   <a href="https://github.com/Misty033?tab=repositories" target="_blank">
-    <rect x="856" y="290" width="52" height="22" rx="11" fill="#f0f0f5" stroke="#d0d7de" stroke-width="1"/>
-    <text x="882" y="304" font-family="'Segoe UI Mono','Courier New',monospace" font-size="8.5" fill="#57606a" text-anchor="middle" letter-spacing="0.3">more →</text>
+    <rect x="854" y="326" width="50" height="20" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="879" y="339" font-family="'Courier New',monospace" font-size="8" fill="#8b949e" text-anchor="middle" letter-spacing="0.3">more →</text>
   </a>
 
 </svg>
