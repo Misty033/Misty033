@@ -2,7 +2,7 @@
 
 <img align="right" height="180" src="https://raw.githubusercontent.com/Misty033/Misty033/main/output/git_profile1.gif" />
 
-<h3 align="left">Hi 👋 I'm Misty Roy</h3>
+<h3 align="left">Hi, I'm Misty Roy</h3>
 
 <p align="left">
 AI/ML Engineer passionate about building intelligent systems, solving real-world problems, and turning data into impactful products.
@@ -10,9 +10,12 @@ AI/ML Engineer passionate about building intelligent systems, solving real-world
 <p align="left">
 I enjoy machine learning, deep learning, data engineering, MLOps, experimentation, and end-to-end AI solutions.
 </p>
-<p align="left">💼 Open to AI/ML/Data Engineer roles &nbsp;
-<a href="mailto:roy.misty.1204@gmail.com"><img src="https://img.shields.io/badge/Email%20-D14836?style=flat-square&logo=minutemailer&logoColor=white"/></a>
+<p align="left">💼 Open to AI/ML/Data Engineer roles 
 </p>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=roy.misty.1204@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/Gmail-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
 
 ---
 
@@ -27,14 +30,14 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 ## 🌷 About Me
 
-- 🤖 AI/ML Engineer with a strong interest in practical AI systems
-- 🌱 Currently learning **Cloud Platforms**, **Agentic Systems**, **Deploymnents**
-- 🔨 Currently building: Financial Analyzer using GCP & Databricks 
-- 📊 Love converting raw data into decisions and products  
-- 🧠 Interested in LLMs, NLP, Deep Learning & Recommendation Systems  
-- ⚙️ Focused on scalable pipelines, automation & clean workflows  
-- 💡 I enjoy building things that are useful!  
-- ☕ Powered by coffee & curiosity
+- AI/ML Engineer with a strong interest in practical AI systems
+- Currently learning **Cloud Platforms**, **Agentic Systems**, **Deploymnents**
+- Currently building: Financial Analyzer using GCP & Databricks 
+- Love converting raw data into decisions and products  
+- Interested in LLMs, NLP, Deep Learning & Recommendation Systems  
+- Focused on scalable pipelines, automation & clean workflows  
+- I enjoy building things that are useful!  
+- Powered by coffee & curiosity
 
 
 
@@ -71,7 +74,7 @@ I enjoy machine learning, deep learning, data engineering, MLOps, experimentatio
 
 
 
-## ⭐ Favourite Projects
+## ⭐ Featured Projects
 
 ![Timeline](./timeline.svg)
 
